@@ -44,10 +44,19 @@ export function BarChart({ data, valueFormat = (v) => String(Math.round(v * 10) 
   const baselineY = PAD.top + innerH;
 
   const yAt = (v: number) => PAD.top + (1 - v / max) * innerH;
+  const summary = data.map((d) => `${d.label}: ${valueFormat(d.value)}`).join(", ");
 
   return (
     <div className="relative w-full select-none">
-      <svg viewBox={`0 0 ${VIEW_W} ${height}`} width="100%" height={height} preserveAspectRatio="none" className="block overflow-visible">
+      <svg
+        viewBox={`0 0 ${VIEW_W} ${height}`}
+        width="100%"
+        height={height}
+        preserveAspectRatio="none"
+        className="block overflow-visible"
+        role="img"
+        aria-label={`Gráfico de barras. ${summary}`}
+      >
         <line x1={PAD.left} x2={VIEW_W - PAD.right} y1={baselineY} y2={baselineY} stroke="var(--line)" strokeWidth={1} />
         <text x={PAD.left - 8} y={PAD.top} textAnchor="end" dominantBaseline="hanging" fontSize={10} fill="var(--ink-faint)">
           {valueFormat(max)}

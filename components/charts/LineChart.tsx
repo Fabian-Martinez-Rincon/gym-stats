@@ -66,6 +66,7 @@ export function LineChart({ data, valueFormat = (v) => String(Math.round(v * 10)
   }
 
   const hoverPoint = hover !== null ? data[hover] : null;
+  const summary = data.map((d) => `${d.label}: ${valueFormat(d.value)}`).join(", ");
 
   return (
     <div ref={containerRef} className="relative w-full select-none">
@@ -77,6 +78,8 @@ export function LineChart({ data, valueFormat = (v) => String(Math.round(v * 10)
         className="block overflow-visible"
         onPointerMove={(e) => handlePointer(e.clientX)}
         onPointerLeave={() => setHover(null)}
+        role="img"
+        aria-label={`Gráfico de líneas. ${summary}`}
       >
         {gridValues.map((gv, i) => (
           <g key={i}>
