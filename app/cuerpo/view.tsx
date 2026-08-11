@@ -101,7 +101,7 @@ export function CuerpoView({ initialMetrics }: { initialMetrics: BodyMetric[] })
         {metrics.length === 0 ? (
           <EmptyState>Todavía no cargaste ningún registro corporal.</EmptyState>
         ) : (
-          <div className="overflow-x-auto rounded-(--radius) border border-(--line)">
+          <div className="scroll-fade-x overflow-x-auto rounded-(--radius) border border-(--line)">
             <table className="w-full text-left text-sm">
               <thead className="bg-(--bg-sunken) text-xs text-(--ink-faint)">
                 <tr>
@@ -128,7 +128,7 @@ export function CuerpoView({ initialMetrics }: { initialMetrics: BodyMetric[] })
                     <td className="px-3 py-2 tabular-nums">{m.armCm ?? "—"}</td>
                     <td className="px-3 py-2 tabular-nums">{m.thighCm ?? "—"}</td>
                     <td className="px-3 py-2 text-right">
-                      <button disabled={deletingId === m.id} onClick={() => handleDelete(m.id)} className="text-xs text-(--ink-faint) hover:text-(--danger)">
+                      <button disabled={deletingId === m.id} onClick={() => handleDelete(m.id)} className="rounded px-2 py-1.5 text-xs text-(--ink-faint) transition hover:bg-(--danger-bg) hover:text-(--danger)">
                         Eliminar
                       </button>
                     </td>
