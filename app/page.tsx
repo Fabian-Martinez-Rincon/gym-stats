@@ -1,0 +1,107 @@
+import Link from "next/link";
+import { getGymData } from "@/lib/gym";
+import {
+  computeMonthlyVolume,
+  computeRecentPRs,
+  computeStreaks,
+  computeWeeklyFrequency,
+  computeWeightTrend,
+  getActivityDates,
+  todayStr,
+  weightDelta,
+  workoutVolume,
+} from "@/lib/stats";
+import { Card, EmptyState, StatTile } from "@/app/_components/ui";
+import { DashboardCharts } from "@/app/_components/dashboard-charts";
+
+export const dynamic = "force-dynamic";
+
+export default async function DashboardPage() {
+  const data = await getGymData();
+  const activityDates = getActivityDates(data);
+  const streaks = computeStreaks(activityDates);
+  const weekly = computeWeeklyFrequency(activityDates, 8);
+  const monthly = computeMonthlyVolume(data.workouts, 6);
+  const prs = computeRecentPRs(data.workouts, 6);
+  const weightPoints = computeWeightTrend(data.bodyMetrics);
+  const delta30 = weightDelta(weightPoints, 30);
+  const latestWeight = weightPoints[weightPoints.length - 1];
+
+  const currentMonth = todayStr().slice(0, 7);
+  const workoutsThisMonth = data.workouts.filter((w) => w.date.slice(0, 7) === currentMonth).length;
+  const volumeThisMonth = data.workouts
+    .filter((w) => w.date.slice(0, 7) === currentMonth)
+    .reduce((sum, w) => sum + workoutVolume(w), 0);
+
+  const hasAnyData = data.workouts.length > 0 || data.bodyMetrics.length > 0 || data.cardioSessions.length > 0 || data.visits.length > 0;
+
+  return (
+    <div className="mx-auto max-w-4xl px-3 py-4 lg:px-4">
+      <h1 className="mb-1 text-xl font-bold text-foreground">Resumen</h1>
+      <p className="mb-4 text-sm text-(--ink-faint)">Tu rendimiento en el gimnasio, de un vistazo.</p>
+
+      {!hasAnyData ? (
+        <EmptyState>
+          Todavía no cargaste nada. Arrancá por{" "}
+          <Link href="/entrenamientos" className="font-medium text-(--brand) hover:underline">
+            Entrenamientos
+          </Link>{" "}
+          o marcá tu primera asistencia en{" "}
+          <Link href="/asistencia" className="font-medium text-(--brand) hover:underline">
+            Asistencia
+          </Link>
+          .
+        </EmptyState>
+      ) : (
+        <div className="flex flex-col gap-5">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <StatTile label="Racha actual" value={`${streaks.current}d`} sub={`Récord: ${streaks.longest}d`} />
+            <StatTile label="Entrenamientos (mes)" value={String(workoutsThisMonth)} />
+            <StatTile label="Volumen (mes)" value={`${Math.round(volumeThisMonth).toLocaleString("es-AR")}kg`} />
+            <StatTile
+              label="Peso actual"
+              value={latestWeight ? `${latestWeight.weightKg}kg` : "—"}
+              deltaLabel={delta30 !== null ? `${delta30 > 0 ? "+" : ""}${delta30.toFixed(1)}kg (30d)` : undefined}
+            />
+          </div>
+
+          <Card
+            title="Récords recientes"
+            action={
+              <Link href="/progreso" className="text-xs font-medium text-(--brand) hover:underline">
+                Ver progreso
+              </Link>
+            }
+          >
+            {prs.length === 0 ? (
+              <p className="text-sm text-(--ink-faint)">Todavía no hay récords registrados.</p>
+            ) : (
+              <ul className="flex flex-col gap-2">
+                {prs.map((pr, i) => (
+                  <li key={i} className="flex items-center justify-between gap-2 rounded-md bg-(--gold-bg) px-3 py-2">
+                    <div className="flex items-center gap-2">
+                      <span aria-hidden>🏆</span>
+                      <span className="text-sm font-medium text-foreground">{pr.exerciseName}</span>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-sm font-semibold" style={{ color: "var(--gold)" }}>
+                        {pr.weightKg}kg x{pr.reps}
+                      </div>
+                      <div className="text-[10px] text-(--ink-faint)">{fmt(pr.date)}</div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </Card>
+
+          <DashboardCharts weekly={weekly} monthly={monthly} weightPoints={weightPoints} />
+        </div>
+      )}
+    </div>
+  );
+}
+
+function fmt(date: string) {
+  return new Date(`${date}T00:00:00`).toLocaleDateString("es-AR", { day: "2-digit", month: "2-digit" });
+}
