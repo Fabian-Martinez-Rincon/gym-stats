@@ -96,7 +96,7 @@ export function AsistenciaView({
 
       {visits.length > 0 && (
         <div>
-          <h2 className="mb-2 text-sm font-semibold text-foreground">Asistencias rápidas ({visits.length})</h2>
+          <h3 className="mb-2 text-sm font-semibold text-foreground">Asistencias rápidas ({visits.length})</h3>
           <div className="flex flex-col gap-2">
             {visits.map((v) => (
               <Card key={v.id}>

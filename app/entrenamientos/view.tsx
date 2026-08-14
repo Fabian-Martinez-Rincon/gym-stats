@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import type { Workout } from "@/lib/gym";
 import { todayStr, workoutVolume } from "@/lib/stats";
 import { Button, Card, EmptyState, Field, inputClass } from "@/app/_components/ui";
@@ -18,8 +19,8 @@ function emptyExercise(): DraftExercise {
   return { name: "", sets: [{ reps: "", weightKg: "" }] };
 }
 
-export function EntrenamientosView({ initialWorkouts, knownExercises }: { initialWorkouts: Workout[]; knownExercises: string[] }) {
-  const [workouts, setWorkouts] = useState(initialWorkouts);
+export function EntrenamientosView({ workouts, knownExercises }: { workouts: Workout[]; knownExercises: string[] }) {
+  const router = useRouter();
   const [date, setDate] = useState(todayStr());
   const [exercises, setExercises] = useState<DraftExercise[]>([emptyExercise()]);
   const [notes, setNotes] = useState("");
@@ -76,9 +77,9 @@ export function EntrenamientosView({ initialWorkouts, knownExercises }: { initia
       });
       const json = await res.json();
       if (!res.ok) throw new Error(json.error ?? "No se pudo guardar.");
-      setWorkouts((prev) => [json.workout, ...prev].sort((a, b) => b.date.localeCompare(a.date) || b.createdAt.localeCompare(a.createdAt)));
       setExercises([emptyExercise()]);
       setNotes("");
+      router.refresh();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Error desconocido.");
     } finally {
@@ -88,10 +89,8 @@ export function EntrenamientosView({ initialWorkouts, knownExercises }: { initia
 
   async function handleDelete(id: string) {
     setDeletingId(id);
-    const prev = workouts;
-    setWorkouts((w) => w.filter((x) => x.id !== id));
     const res = await fetch(`/api/workouts/${id}`, { method: "DELETE" });
-    if (!res.ok) setWorkouts(prev);
+    if (res.ok) router.refresh();
     setDeletingId(null);
   }
 
@@ -182,7 +181,7 @@ export function EntrenamientosView({ initialWorkouts, knownExercises }: { initia
       </Card>
 
       <div>
-        <h2 className="mb-2 text-sm font-semibold text-foreground">Historial ({workouts.length})</h2>
+        <h3 className="mb-2 text-sm font-semibold text-foreground">Historial ({workouts.length})</h3>
         {workouts.length === 0 ? (
           <EmptyState>Todavía no cargaste ningún entrenamiento.</EmptyState>
         ) : (

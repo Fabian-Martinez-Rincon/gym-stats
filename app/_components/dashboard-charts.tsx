@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import type { BodyWeightPoint, MonthBucket, WeekBucket } from "@/lib/stats";
 import { Card } from "@/app/_components/ui";
 import { BarChart } from "@/components/charts/BarChart";
@@ -17,9 +16,9 @@ export function DashboardCharts({ weekly, monthly, weightPoints }: { weekly: Wee
         <Card
           title="Frecuencia semanal"
           action={
-            <Link href="/asistencia" className="text-xs font-medium text-(--brand) hover:underline">
+            <a href="#asistencia" className="text-xs font-medium text-(--brand) hover:underline">
               Ver asistencia
-            </Link>
+            </a>
           }
         >
           <BarChart data={weekly.map((w) => ({ label: w.label, value: w.days }))} valueFormat={(v) => `${Math.round(v)}`} height={180} />
@@ -34,9 +33,9 @@ export function DashboardCharts({ weekly, monthly, weightPoints }: { weekly: Wee
         <Card
           title="Peso corporal"
           action={
-            <Link href="/cuerpo" className="text-xs font-medium text-(--brand) hover:underline">
+            <a href="#cuerpo" className="text-xs font-medium text-(--brand) hover:underline">
               Ver cuerpo
-            </Link>
+            </a>
           }
         >
           <LineChart data={weightPoints.slice(-20).map((p) => ({ label: fmt(p.date), value: p.weightKg }))} valueFormat={(v) => `${v.toFixed(1)}kg`} height={180} />

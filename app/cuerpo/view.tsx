@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import type { BodyMetric } from "@/lib/gym";
 import { computeWeightTrend, todayStr, weightDelta } from "@/lib/stats";
 import { Button, Card, EmptyState, Field, StatTile, inputClass } from "@/app/_components/ui";
@@ -8,8 +9,8 @@ import { LineChart } from "@/components/charts/LineChart";
 
 const EMPTY_FORM = { date: todayStr(), weightKg: "", bodyFatPct: "", chestCm: "", waistCm: "", hipsCm: "", armCm: "", thighCm: "" };
 
-export function CuerpoView({ initialMetrics }: { initialMetrics: BodyMetric[] }) {
-  const [metrics, setMetrics] = useState(initialMetrics);
+export function CuerpoView({ metrics }: { metrics: BodyMetric[] }) {
+  const router = useRouter();
   const [form, setForm] = useState(EMPTY_FORM);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -31,8 +32,8 @@ export function CuerpoView({ initialMetrics }: { initialMetrics: BodyMetric[] })
       });
       const json = await res.json();
       if (!res.ok) throw new Error(json.error ?? "No se pudo guardar.");
-      setMetrics((prev) => [json.metric, ...prev].sort((a, b) => b.date.localeCompare(a.date)));
       setForm({ ...EMPTY_FORM, date: form.date });
+      router.refresh();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Error desconocido.");
     } finally {
@@ -42,10 +43,8 @@ export function CuerpoView({ initialMetrics }: { initialMetrics: BodyMetric[] })
 
   async function handleDelete(id: string) {
     setDeletingId(id);
-    const prev = metrics;
-    setMetrics((m) => m.filter((x) => x.id !== id));
     const res = await fetch(`/api/body/${id}`, { method: "DELETE" });
-    if (!res.ok) setMetrics(prev);
+    if (res.ok) router.refresh();
     setDeletingId(null);
   }
 
@@ -97,7 +96,7 @@ export function CuerpoView({ initialMetrics }: { initialMetrics: BodyMetric[] })
       </Card>
 
       <div>
-        <h2 className="mb-2 text-sm font-semibold text-foreground">Historial ({metrics.length})</h2>
+        <h3 className="mb-2 text-sm font-semibold text-foreground">Historial ({metrics.length})</h3>
         {metrics.length === 0 ? (
           <EmptyState>Todavía no cargaste ningún registro corporal.</EmptyState>
         ) : (

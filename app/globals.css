@@ -108,6 +108,17 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
+/* Fondo ambiental: drift lento y sutil, no distrae de la lectura. Se apaga
+   solo vía la regla global de prefers-reduced-motion de más arriba. */
+@keyframes drift-a {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-4%, 3%) scale(1.08); }
+}
+@keyframes drift-b {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(3%, -4%) scale(1.1); }
+}
+
 /* Hints that a horizontally-scrollable container (mobile nav, wide tables) has more content past the edge. */
 .scroll-fade-x {
   -webkit-mask-image: linear-gradient(to right, black calc(100% - 28px), transparent);

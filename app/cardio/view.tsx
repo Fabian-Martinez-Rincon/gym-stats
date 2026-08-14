@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import type { CardioSession } from "@/lib/gym";
 import { computeCardioTotals, todayStr } from "@/lib/stats";
 import { Button, Card, EmptyState, Field, StatTile, inputClass } from "@/app/_components/ui";
@@ -10,8 +11,8 @@ function emptyForm(type: string) {
   return { date: todayStr(), type, durationMin: "", distanceKm: "", calories: "", notes: "" };
 }
 
-export function CardioView({ initialSessions, cardioTypes }: { initialSessions: CardioSession[]; cardioTypes: string[] }) {
-  const [sessions, setSessions] = useState(initialSessions);
+export function CardioView({ sessions, cardioTypes }: { sessions: CardioSession[]; cardioTypes: string[] }) {
+  const router = useRouter();
   const [form, setForm] = useState(emptyForm(cardioTypes[0]));
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -35,8 +36,8 @@ export function CardioView({ initialSessions, cardioTypes }: { initialSessions: 
       });
       const json = await res.json();
       if (!res.ok) throw new Error(json.error ?? "No se pudo guardar.");
-      setSessions((prev) => [json.session, ...prev].sort((a, b) => b.date.localeCompare(a.date)));
       setForm(emptyForm(form.type));
+      router.refresh();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Error desconocido.");
     } finally {
@@ -46,10 +47,8 @@ export function CardioView({ initialSessions, cardioTypes }: { initialSessions: 
 
   async function handleDelete(id: string) {
     setDeletingId(id);
-    const prev = sessions;
-    setSessions((s) => s.filter((x) => x.id !== id));
     const res = await fetch(`/api/cardio/${id}`, { method: "DELETE" });
-    if (!res.ok) setSessions(prev);
+    if (res.ok) router.refresh();
     setDeletingId(null);
   }
 
@@ -101,7 +100,7 @@ export function CardioView({ initialSessions, cardioTypes }: { initialSessions: 
       </Card>
 
       <div>
-        <h2 className="mb-2 text-sm font-semibold text-foreground">Historial ({sessions.length})</h2>
+        <h3 className="mb-2 text-sm font-semibold text-foreground">Historial ({sessions.length})</h3>
         {sessions.length === 0 ? (
           <EmptyState>Todavía no cargaste ninguna sesión de cardio.</EmptyState>
         ) : (
