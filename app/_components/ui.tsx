@@ -8,14 +8,21 @@ export function Card({
   action,
   children,
   className = "",
+  interactive = false,
 }: {
   title?: string;
   action?: ReactNode;
   children: ReactNode;
   className?: string;
+  /** Aplica el hover de elevación compartido por toda tarjeta clickeable (filas de historial, etc). */
+  interactive?: boolean;
 }) {
   return (
-    <div className={`rounded-(--radius) border border-(--line) bg-(--bg-elevated) p-4 shadow-(--shadow) ${className}`}>
+    <div
+      className={`rounded-(--radius) border border-(--line) bg-(--bg-elevated) p-4 shadow-(--shadow) ${
+        interactive ? "transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-lg" : ""
+      } ${className}`}
+    >
       {(title || action) && (
         <div className="mb-3 flex items-center justify-between gap-2">
           {title && <h3 className="text-sm font-semibold text-foreground">{title}</h3>}
@@ -24,6 +31,82 @@ export function Card({
       )}
       {children}
     </div>
+  );
+}
+
+export function Badge({ children, className = "" }: { children: ReactNode; className?: string }) {
+  return (
+    <span
+      className={`inline-flex shrink-0 items-center rounded-full bg-(--bg-sunken) px-2.5 py-1 text-xs font-medium text-(--ink-dim) ${className}`}
+    >
+      {children}
+    </span>
+  );
+}
+
+export function ProgressBar({ pct, className = "" }: { pct: number; className?: string }) {
+  const clamped = Math.max(0, Math.min(100, pct));
+  return (
+    <div className={`h-1.5 w-full overflow-hidden rounded-full bg-(--bg-sunken) ${className}`}>
+      <div className="h-full rounded-full bg-(--brand) transition-[width] duration-300 ease-out" style={{ width: `${clamped}%` }} />
+    </div>
+  );
+}
+
+export function IconCircle({
+  children,
+  color = "var(--brand)",
+  className = "",
+}: {
+  children: ReactNode;
+  /** Color CSS (custom property o valor) usado como texto del ícono y, atenuado, como fondo. */
+  color?: string;
+  className?: string;
+}) {
+  return (
+    <div
+      className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${className}`}
+      style={{ backgroundColor: `color-mix(in oklab, ${color} 14%, transparent)`, color }}
+    >
+      {children}
+    </div>
+  );
+}
+
+export function ChevronIcon({ open = false, className = "" }: { open?: boolean; className?: string }) {
+  return (
+    <svg
+      aria-hidden
+      viewBox="0 0 20 20"
+      fill="none"
+      className={`h-5 w-5 shrink-0 text-(--ink-faint) transition-transform duration-200 ${open ? "rotate-180" : ""} ${className}`}
+    >
+      <path d="M5 7.5 10 12.5 15 7.5" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+// Encabezado compartido por cada sección: kicker en el color propio de esa
+// sección + título + bajada.
+export function SectionHeading({
+  eyebrow,
+  eyebrowColor,
+  title,
+  subtitle,
+}: {
+  eyebrow: string;
+  eyebrowColor: string;
+  title: string;
+  subtitle: string;
+}) {
+  return (
+    <>
+      <span className="mb-1.5 block text-xs font-bold uppercase tracking-[0.2em]" style={{ color: eyebrowColor }}>
+        {eyebrow}
+      </span>
+      <h2 className="mb-1 text-xl font-bold text-foreground">{title}</h2>
+      <p className="mb-4 text-sm text-(--ink-faint)">{subtitle}</p>
+    </>
   );
 }
 

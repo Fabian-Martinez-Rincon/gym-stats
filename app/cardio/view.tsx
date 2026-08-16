@@ -4,8 +4,22 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import type { CardioSession } from "@/lib/gym";
 import { computeCardioTotals, todayStr } from "@/lib/stats";
-import { Button, Card, EmptyState, Field, StatTile, inputClass } from "@/app/_components/ui";
+import { Button, Card, EmptyState, Field, IconCircle, StatTile, inputClass } from "@/app/_components/ui";
 import { LineChart } from "@/components/charts/LineChart";
+
+function CardioIcon() {
+  return (
+    <svg aria-hidden viewBox="0 0 24 24" fill="none" className="h-4.5 w-4.5">
+      <path
+        d="M3 12h4l2-6 3 12 2-9 2 6.5h5"
+        stroke="currentColor"
+        strokeWidth={1.75}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 function emptyForm(type: string) {
   return { date: todayStr(), type, durationMin: "", distanceKm: "", calories: "", notes: "" };
@@ -17,6 +31,7 @@ export function CardioView({ sessions, cardioTypes }: { sessions: CardioSession[
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [deletingId, setDeletingId] = useState<string | null>(null);
+  const [visibleCount, setVisibleCount] = useState(8);
 
   const totals30 = computeCardioTotals(sessions, 30);
   const chartData = [...sessions]
@@ -104,27 +119,46 @@ export function CardioView({ sessions, cardioTypes }: { sessions: CardioSession[
         {sessions.length === 0 ? (
           <EmptyState>Todavía no cargaste ninguna sesión de cardio.</EmptyState>
         ) : (
-          <div className="flex flex-col gap-2">
-            {sessions.map((s) => (
-              <Card key={s.id}>
-                <div className="flex items-start justify-between gap-2">
-                  <div>
-                    <div className="text-sm font-semibold text-foreground">
-                      {s.type} · {fmt(s.date)}
+          <>
+            <div className="flex flex-col gap-2">
+              {sessions.slice(0, visibleCount).map((s) => (
+                <Card key={s.id} interactive className="group">
+                  <div className="flex items-start gap-3">
+                    <IconCircle color="var(--accent-cardio)">
+                      <CardioIcon />
+                    </IconCircle>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-start justify-between gap-2">
+                        <div>
+                          <div className="text-sm font-semibold text-foreground">
+                            {s.type} · {fmt(s.date)}
+                          </div>
+                          <div className="text-xs text-(--ink-faint)">
+                            {s.durationMin} min{s.distanceKm ? ` · ${s.distanceKm}km` : ""}
+                            {s.calories ? ` · ${s.calories}kcal` : ""}
+                          </div>
+                          {s.notes && <p className="mt-1 text-xs text-(--ink-faint) italic">{s.notes}</p>}
+                        </div>
+                        <button
+                          type="button"
+                          disabled={deletingId === s.id}
+                          onClick={() => handleDelete(s.id)}
+                          className="shrink-0 rounded-md px-2 py-1 text-xs font-medium text-(--danger) opacity-100 transition-opacity hover:bg-(--danger-bg) disabled:opacity-50 sm:opacity-0 sm:group-hover:opacity-100 sm:group-focus-within:opacity-100"
+                        >
+                          Eliminar
+                        </button>
+                      </div>
                     </div>
-                    <div className="text-xs text-(--ink-faint)">
-                      {s.durationMin} min{s.distanceKm ? ` · ${s.distanceKm}km` : ""}
-                      {s.calories ? ` · ${s.calories}kcal` : ""}
-                    </div>
-                    {s.notes && <p className="mt-1 text-xs text-(--ink-faint) italic">{s.notes}</p>}
                   </div>
-                  <Button variant="danger" disabled={deletingId === s.id} onClick={() => handleDelete(s.id)}>
-                    Eliminar
-                  </Button>
-                </div>
-              </Card>
-            ))}
-          </div>
+                </Card>
+              ))}
+            </div>
+            {visibleCount < sessions.length && (
+              <Button type="button" variant="secondary" onClick={() => setVisibleCount((n) => n + 8)} className="mt-3 w-full">
+                Mostrar {Math.min(8, sessions.length - visibleCount)} más ({sessions.length - visibleCount} restantes)
+              </Button>
+            )}
+          </>
         )}
       </div>
     </div>

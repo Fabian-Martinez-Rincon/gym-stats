@@ -5,9 +5,19 @@ import { useRouter } from "next/navigation";
 import type { GymVisit } from "@/lib/gym";
 import type { AttendanceDay, StreakInfo, WeekBucket } from "@/lib/stats";
 import { todayStr } from "@/lib/stats";
-import { Button, Card, EmptyState, StatTile, inputClass } from "@/app/_components/ui";
+import { Button, Card, EmptyState, IconCircle, StatTile, inputClass } from "@/app/_components/ui";
 import { BarChart } from "@/components/charts/BarChart";
 import { Heatmap } from "@/components/charts/Heatmap";
+
+function CalendarCheckIcon() {
+  return (
+    <svg aria-hidden viewBox="0 0 24 24" fill="none" className="h-4.5 w-4.5">
+      <rect x="3.5" y="4.5" width="17" height="16" rx="2" stroke="currentColor" strokeWidth={1.75} />
+      <path d="M3.5 9h17M8 3v3M16 3v3" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" />
+      <path d="m8.5 13.5 2 2 4-4.5" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
 
 export function AsistenciaView({
   streaks,
@@ -27,6 +37,7 @@ export function AsistenciaView({
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [deletingId, setDeletingId] = useState<string | null>(null);
+  const [visibleCount, setVisibleCount] = useState(8);
 
   async function handleCheckIn(e: React.FormEvent) {
     e.preventDefault();
@@ -98,20 +109,35 @@ export function AsistenciaView({
         <div>
           <h3 className="mb-2 text-sm font-semibold text-foreground">Asistencias rápidas ({visits.length})</h3>
           <div className="flex flex-col gap-2">
-            {visits.map((v) => (
-              <Card key={v.id}>
-                <div className="flex items-center justify-between gap-2">
-                  <div>
-                    <div className="text-sm font-medium text-foreground">{fmt(v.date)}</div>
-                    {v.notes && <div className="text-xs text-(--ink-faint)">{v.notes}</div>}
+            {visits.slice(0, visibleCount).map((v) => (
+              <Card key={v.id} interactive className="group">
+                <div className="flex items-center gap-3">
+                  <IconCircle color="var(--accent-asistencia)">
+                    <CalendarCheckIcon />
+                  </IconCircle>
+                  <div className="flex min-w-0 flex-1 items-center justify-between gap-2">
+                    <div>
+                      <div className="text-sm font-medium text-foreground">{fmt(v.date)}</div>
+                      {v.notes && <div className="text-xs text-(--ink-faint)">{v.notes}</div>}
+                    </div>
+                    <button
+                      type="button"
+                      disabled={deletingId === v.id}
+                      onClick={() => handleDelete(v.id)}
+                      className="shrink-0 rounded-md px-2 py-1 text-xs font-medium text-(--danger) opacity-100 transition-opacity hover:bg-(--danger-bg) disabled:opacity-50 sm:opacity-0 sm:group-hover:opacity-100 sm:group-focus-within:opacity-100"
+                    >
+                      Eliminar
+                    </button>
                   </div>
-                  <Button variant="danger" disabled={deletingId === v.id} onClick={() => handleDelete(v.id)}>
-                    Eliminar
-                  </Button>
                 </div>
               </Card>
             ))}
           </div>
+          {visibleCount < visits.length && (
+            <Button type="button" variant="secondary" onClick={() => setVisibleCount((n) => n + 8)} className="mt-3 w-full">
+              Mostrar {Math.min(8, visits.length - visibleCount)} más ({visits.length - visibleCount} restantes)
+            </Button>
+          )}
         </div>
       )}
       {visits.length === 0 && <EmptyState>No hay asistencias rápidas registradas todavía.</EmptyState>}

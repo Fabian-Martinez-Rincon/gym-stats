@@ -1,6 +1,4905 @@
 {
-  "workouts": [],
-  "bodyMetrics": [],
-  "cardioSessions": [],
-  "visits": []
+  "workouts": [
+    {
+      "id": "9da90877-dfb5-4211-947b-2b96e41e9062",
+      "date": "2026-04-13",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 47.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 47.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 47.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 47.5
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 28
+            },
+            {
+              "reps": 8,
+              "weightKg": 28
+            },
+            {
+              "reps": 5,
+              "weightKg": 28
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 18
+            },
+            {
+              "reps": 9,
+              "weightKg": 18
+            },
+            {
+              "reps": 8,
+              "weightKg": 18
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 14
+            },
+            {
+              "reps": 11,
+              "weightKg": 14
+            },
+            {
+              "reps": 10,
+              "weightKg": 14
+            }
+          ]
+        }
+      ],
+      "notes": "Costó un poco, poco sueño.",
+      "createdAt": "2026-04-13T19:50:00.000Z"
+    },
+    {
+      "id": "be386845-d3d9-48a3-89d9-ed836ced68f2",
+      "date": "2026-04-15",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 72
+            },
+            {
+              "reps": 6,
+              "weightKg": 72
+            },
+            {
+              "reps": 4,
+              "weightKg": 72
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 40
+            },
+            {
+              "reps": 6,
+              "weightKg": 40
+            },
+            {
+              "reps": 7,
+              "weightKg": 40
+            },
+            {
+              "reps": 6,
+              "weightKg": 40
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 0
+            },
+            {
+              "reps": 5,
+              "weightKg": 0
+            },
+            {
+              "reps": 5,
+              "weightKg": 0
+            },
+            {
+              "reps": 4,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 11
+            },
+            {
+              "reps": 9,
+              "weightKg": 11
+            },
+            {
+              "reps": 8,
+              "weightKg": 11
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 15,
+              "weightKg": 14.5
+            },
+            {
+              "reps": 14,
+              "weightKg": 14.5
+            },
+            {
+              "reps": 12,
+              "weightKg": 14.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-04-15T19:17:00.000Z"
+    },
+    {
+      "id": "6462f315-c277-497e-a732-5b43a8b7f8a9",
+      "date": "2026-04-17",
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 61
+            },
+            {
+              "reps": 8,
+              "weightKg": 61
+            },
+            {
+              "reps": 5,
+              "weightKg": 61
+            },
+            {
+              "reps": 7,
+              "weightKg": 61
+            }
+          ]
+        },
+        {
+          "name": "Prensa de piernas",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 100
+            },
+            {
+              "reps": 8,
+              "weightKg": 100
+            },
+            {
+              "reps": 7,
+              "weightKg": 100
+            }
+          ]
+        },
+        {
+          "name": "Zancadas",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 14
+            },
+            {
+              "reps": 11,
+              "weightKg": 14
+            },
+            {
+              "reps": 10,
+              "weightKg": 14
+            }
+          ]
+        },
+        {
+          "name": "Hip thrust",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 42
+            },
+            {
+              "reps": 9,
+              "weightKg": 42
+            },
+            {
+              "reps": 9,
+              "weightKg": 42
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-04-17T19:42:00.000Z"
+    },
+    {
+      "id": "599df094-1fb5-414a-ab53-971bd49f1119",
+      "date": "2026-04-20",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 48.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 48.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 48.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 48.5
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 30
+            },
+            {
+              "reps": 6,
+              "weightKg": 30
+            },
+            {
+              "reps": 7,
+              "weightKg": 30
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 19
+            },
+            {
+              "reps": 10,
+              "weightKg": 19
+            },
+            {
+              "reps": 8,
+              "weightKg": 19
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 14.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 14.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 14.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-04-20T19:47:00.000Z"
+    },
+    {
+      "id": "a22833da-c758-458a-8b7b-19a205fd766a",
+      "date": "2026-04-22",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 4,
+              "weightKg": 71.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 71.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 71.5
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 40.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 40.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 40.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 40.5
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 0
+            },
+            {
+              "reps": 5,
+              "weightKg": 0
+            },
+            {
+              "reps": 5,
+              "weightKg": 0
+            },
+            {
+              "reps": 4,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 11
+            },
+            {
+              "reps": 11,
+              "weightKg": 11
+            },
+            {
+              "reps": 10,
+              "weightKg": 11
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 15,
+              "weightKg": 15.5
+            },
+            {
+              "reps": 13,
+              "weightKg": 15.5
+            },
+            {
+              "reps": 13,
+              "weightKg": 15.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-04-22T19:11:00.000Z"
+    },
+    {
+      "id": "41dca293-0ad1-4063-ad47-1601eb243b51",
+      "date": "2026-04-24",
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 63
+            },
+            {
+              "reps": 6,
+              "weightKg": 63
+            },
+            {
+              "reps": 6,
+              "weightKg": 63
+            },
+            {
+              "reps": 4,
+              "weightKg": 63
+            }
+          ]
+        },
+        {
+          "name": "Prensa de piernas",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 101.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 101.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 101.5
+            }
+          ]
+        },
+        {
+          "name": "Zancadas",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 14
+            },
+            {
+              "reps": 11,
+              "weightKg": 14
+            },
+            {
+              "reps": 10,
+              "weightKg": 14
+            }
+          ]
+        },
+        {
+          "name": "Hip thrust",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 42
+            },
+            {
+              "reps": 8,
+              "weightKg": 42
+            },
+            {
+              "reps": 8,
+              "weightKg": 42
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-04-24T19:20:00.000Z"
+    },
+    {
+      "id": "680aeec4-285a-45ea-a68e-163abbafb54c",
+      "date": "2026-04-27",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 50.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 50.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 50.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 50.5
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 30.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 30.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 30.5
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 18.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 18.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 18.5
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 15
+            },
+            {
+              "reps": 11,
+              "weightKg": 15
+            },
+            {
+              "reps": 10,
+              "weightKg": 15
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-04-27T19:54:00.000Z"
+    },
+    {
+      "id": "cdc17b86-d6ab-40d4-804e-17f8708d33ad",
+      "date": "2026-04-29",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 4,
+              "weightKg": 77
+            },
+            {
+              "reps": 5,
+              "weightKg": 77
+            },
+            {
+              "reps": 4,
+              "weightKg": 77
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 44.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 44.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 44.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 44.5
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 0
+            },
+            {
+              "reps": 6,
+              "weightKg": 0
+            },
+            {
+              "reps": 6,
+              "weightKg": 0
+            },
+            {
+              "reps": 5,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 11
+            },
+            {
+              "reps": 9,
+              "weightKg": 11
+            },
+            {
+              "reps": 9,
+              "weightKg": 11
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 14,
+              "weightKg": 15.5
+            },
+            {
+              "reps": 15,
+              "weightKg": 15.5
+            },
+            {
+              "reps": 13,
+              "weightKg": 15.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-04-29T19:50:00.000Z"
+    },
+    {
+      "id": "cebd3117-9404-4c97-a603-db8828a1bed0",
+      "date": "2026-05-01",
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 65
+            },
+            {
+              "reps": 8,
+              "weightKg": 65
+            },
+            {
+              "reps": 7,
+              "weightKg": 65
+            },
+            {
+              "reps": 5,
+              "weightKg": 65
+            }
+          ]
+        },
+        {
+          "name": "Prensa de piernas",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 110
+            },
+            {
+              "reps": 9,
+              "weightKg": 110
+            },
+            {
+              "reps": 7,
+              "weightKg": 110
+            }
+          ]
+        },
+        {
+          "name": "Zancadas",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 14
+            },
+            {
+              "reps": 11,
+              "weightKg": 14
+            },
+            {
+              "reps": 11,
+              "weightKg": 14
+            }
+          ]
+        },
+        {
+          "name": "Hip thrust",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 46.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 46.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 46.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-05-01T19:08:00.000Z"
+    },
+    {
+      "id": "ebbcb176-da5c-477e-af62-0b27b1642d4b",
+      "date": "2026-05-04",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 53
+            },
+            {
+              "reps": 6,
+              "weightKg": 53
+            },
+            {
+              "reps": 7,
+              "weightKg": 53
+            },
+            {
+              "reps": 6,
+              "weightKg": 53
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 30.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 30.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 30.5
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 19
+            },
+            {
+              "reps": 8,
+              "weightKg": 19
+            },
+            {
+              "reps": 8,
+              "weightKg": 19
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 14.5
+            },
+            {
+              "reps": 11,
+              "weightKg": 14.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 14.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-05-04T19:08:00.000Z"
+    },
+    {
+      "id": "db57a9d7-291e-4046-bd27-090be08597e7",
+      "date": "2026-05-06",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 4,
+              "weightKg": 78
+            },
+            {
+              "reps": 6,
+              "weightKg": 78
+            },
+            {
+              "reps": 5,
+              "weightKg": 78
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 44.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 44.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 44.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 44.5
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 0
+            },
+            {
+              "reps": 6,
+              "weightKg": 0
+            },
+            {
+              "reps": 6,
+              "weightKg": 0
+            },
+            {
+              "reps": 5,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 11
+            },
+            {
+              "reps": 8,
+              "weightKg": 11
+            },
+            {
+              "reps": 7,
+              "weightKg": 11
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 14,
+              "weightKg": 14.5
+            },
+            {
+              "reps": 14,
+              "weightKg": 14.5
+            },
+            {
+              "reps": 13,
+              "weightKg": 14.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-05-06T19:01:00.000Z"
+    },
+    {
+      "id": "33f36e6b-d7d3-4611-a6a5-c1672838e64c",
+      "date": "2026-05-08",
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 64.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 64.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 64.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 64.5
+            }
+          ]
+        },
+        {
+          "name": "Prensa de piernas",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 113.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 113.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 113.5
+            }
+          ]
+        },
+        {
+          "name": "Zancadas",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 16.5
+            },
+            {
+              "reps": 11,
+              "weightKg": 16.5
+            },
+            {
+              "reps": 11,
+              "weightKg": 16.5
+            }
+          ]
+        },
+        {
+          "name": "Hip thrust",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 47.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 47.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 47.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-05-08T19:59:00.000Z"
+    },
+    {
+      "id": "7a32bc6b-6d4f-412f-a8dc-26b4c63c2dfd",
+      "date": "2026-05-11",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 52
+            },
+            {
+              "reps": 6,
+              "weightKg": 52
+            },
+            {
+              "reps": 8,
+              "weightKg": 52
+            },
+            {
+              "reps": 5,
+              "weightKg": 52
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 31
+            },
+            {
+              "reps": 8,
+              "weightKg": 31
+            },
+            {
+              "reps": 6,
+              "weightKg": 31
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 21.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 21.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 21.5
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 17
+            },
+            {
+              "reps": 11,
+              "weightKg": 17
+            },
+            {
+              "reps": 10,
+              "weightKg": 17
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-05-11T19:44:00.000Z"
+    },
+    {
+      "id": "f2ff23df-918f-418d-a391-4af1228c87e0",
+      "date": "2026-05-13",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 81
+            },
+            {
+              "reps": 4,
+              "weightKg": 81
+            },
+            {
+              "reps": 3,
+              "weightKg": 81
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 43.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 43.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 43.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 43.5
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 0
+            },
+            {
+              "reps": 6,
+              "weightKg": 0
+            },
+            {
+              "reps": 6,
+              "weightKg": 0
+            },
+            {
+              "reps": 5,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 13
+            },
+            {
+              "reps": 8,
+              "weightKg": 13
+            },
+            {
+              "reps": 8,
+              "weightKg": 13
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 13,
+              "weightKg": 16
+            },
+            {
+              "reps": 15,
+              "weightKg": 16
+            },
+            {
+              "reps": 13,
+              "weightKg": 16
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-05-13T19:53:00.000Z"
+    },
+    {
+      "id": "3bc13ebc-738b-43fc-9cac-e12b89b90465",
+      "date": "2026-05-15",
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 67
+            },
+            {
+              "reps": 7,
+              "weightKg": 67
+            },
+            {
+              "reps": 7,
+              "weightKg": 67
+            },
+            {
+              "reps": 5,
+              "weightKg": 67
+            }
+          ]
+        },
+        {
+          "name": "Prensa de piernas",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 115
+            },
+            {
+              "reps": 10,
+              "weightKg": 115
+            },
+            {
+              "reps": 8,
+              "weightKg": 115
+            }
+          ]
+        },
+        {
+          "name": "Zancadas",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 17
+            },
+            {
+              "reps": 10,
+              "weightKg": 17
+            },
+            {
+              "reps": 9,
+              "weightKg": 17
+            }
+          ]
+        },
+        {
+          "name": "Hip thrust",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 48.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 48.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 48.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-05-15T19:50:00.000Z"
+    },
+    {
+      "id": "7ebb761a-6e02-4d3e-9ce8-334152a9023e",
+      "date": "2026-05-18",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 53.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 53.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 53.5
+            },
+            {
+              "reps": 4,
+              "weightKg": 53.5
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 31
+            },
+            {
+              "reps": 6,
+              "weightKg": 31
+            },
+            {
+              "reps": 7,
+              "weightKg": 31
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 21.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 21.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 21.5
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 15
+            },
+            {
+              "reps": 11,
+              "weightKg": 15
+            },
+            {
+              "reps": 9,
+              "weightKg": 15
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-05-18T19:14:00.000Z"
+    },
+    {
+      "id": "1b589830-972b-4a64-971c-386d71f9e7df",
+      "date": "2026-05-20",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 83
+            },
+            {
+              "reps": 4,
+              "weightKg": 83
+            },
+            {
+              "reps": 4,
+              "weightKg": 83
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 47.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 47.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 47.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 47.5
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 0
+            },
+            {
+              "reps": 6,
+              "weightKg": 0
+            },
+            {
+              "reps": 6,
+              "weightKg": 0
+            },
+            {
+              "reps": 5,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 12
+            },
+            {
+              "reps": 10,
+              "weightKg": 12
+            },
+            {
+              "reps": 8,
+              "weightKg": 12
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 12,
+              "weightKg": 17
+            },
+            {
+              "reps": 12,
+              "weightKg": 17
+            },
+            {
+              "reps": 14,
+              "weightKg": 17
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-05-20T19:28:00.000Z"
+    },
+    {
+      "id": "1bd5b624-2efd-4b43-b230-79c4853a2000",
+      "date": "2026-05-22",
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 73
+            },
+            {
+              "reps": 6,
+              "weightKg": 73
+            },
+            {
+              "reps": 6,
+              "weightKg": 73
+            },
+            {
+              "reps": 6,
+              "weightKg": 73
+            }
+          ]
+        },
+        {
+          "name": "Prensa de piernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 119.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 119.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 119.5
+            }
+          ]
+        },
+        {
+          "name": "Zancadas",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 16.5
+            },
+            {
+              "reps": 12,
+              "weightKg": 16.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 16.5
+            }
+          ]
+        },
+        {
+          "name": "Hip thrust",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 51.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 51.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 51.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-05-22T19:03:00.000Z"
+    },
+    {
+      "id": "ac230325-edac-4b12-9def-ad306c0f2ce0",
+      "date": "2026-05-25",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 57
+            },
+            {
+              "reps": 7,
+              "weightKg": 57
+            },
+            {
+              "reps": 7,
+              "weightKg": 57
+            },
+            {
+              "reps": 5,
+              "weightKg": 57
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 33.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 33.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 33.5
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 19.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 19.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 19.5
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 15.5
+            },
+            {
+              "reps": 11,
+              "weightKg": 15.5
+            },
+            {
+              "reps": 11,
+              "weightKg": 15.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-05-25T19:37:00.000Z"
+    },
+    {
+      "id": "eb840744-5383-46b9-a90e-958c2456fe26",
+      "date": "2026-05-27",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 85.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 85.5
+            },
+            {
+              "reps": 4,
+              "weightKg": 85.5
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 45.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 45.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 45.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 45.5
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 0
+            },
+            {
+              "reps": 7,
+              "weightKg": 0
+            },
+            {
+              "reps": 7,
+              "weightKg": 0
+            },
+            {
+              "reps": 6,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 13.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 13.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 13.5
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 15,
+              "weightKg": 17
+            },
+            {
+              "reps": 15,
+              "weightKg": 17
+            },
+            {
+              "reps": 14,
+              "weightKg": 17
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-05-27T19:57:00.000Z"
+    },
+    {
+      "id": "36cc877d-6935-4e66-9baa-3b4bcb9c895f",
+      "date": "2026-06-01",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 58
+            },
+            {
+              "reps": 8,
+              "weightKg": 58
+            },
+            {
+              "reps": 6,
+              "weightKg": 58
+            },
+            {
+              "reps": 7,
+              "weightKg": 58
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 35
+            },
+            {
+              "reps": 5,
+              "weightKg": 35
+            },
+            {
+              "reps": 5,
+              "weightKg": 35
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 22.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 22.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 22.5
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 17
+            },
+            {
+              "reps": 11,
+              "weightKg": 17
+            },
+            {
+              "reps": 11,
+              "weightKg": 17
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-06-01T19:47:00.000Z"
+    },
+    {
+      "id": "bccc2d50-0a03-4dbf-a14d-0b0340aeaf0d",
+      "date": "2026-06-03",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 87.5
+            },
+            {
+              "reps": 4,
+              "weightKg": 87.5
+            },
+            {
+              "reps": 4,
+              "weightKg": 87.5
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 47
+            },
+            {
+              "reps": 8,
+              "weightKg": 47
+            },
+            {
+              "reps": 7,
+              "weightKg": 47
+            },
+            {
+              "reps": 6,
+              "weightKg": 47
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 0
+            },
+            {
+              "reps": 7,
+              "weightKg": 0
+            },
+            {
+              "reps": 7,
+              "weightKg": 0
+            },
+            {
+              "reps": 6,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 14.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 14.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 14.5
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 13,
+              "weightKg": 18
+            },
+            {
+              "reps": 14,
+              "weightKg": 18
+            },
+            {
+              "reps": 13,
+              "weightKg": 18
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-06-03T19:32:00.000Z"
+    },
+    {
+      "id": "e7b1d5a7-43f5-4de8-ba96-b7486a5c88e3",
+      "date": "2026-06-08",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 58.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 58.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 58.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 58.5
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 34.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 34.5
+            },
+            {
+              "reps": 4,
+              "weightKg": 34.5
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 22.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 22.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 22.5
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 17
+            },
+            {
+              "reps": 11,
+              "weightKg": 17
+            },
+            {
+              "reps": 10,
+              "weightKg": 17
+            }
+          ]
+        }
+      ],
+      "notes": "Buena energía hoy.",
+      "createdAt": "2026-06-08T19:42:00.000Z"
+    },
+    {
+      "id": "f43d4cf2-cf65-4b27-93aa-83f53e82ef80",
+      "date": "2026-06-10",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 90
+            },
+            {
+              "reps": 4,
+              "weightKg": 90
+            },
+            {
+              "reps": 3,
+              "weightKg": 90
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 49.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 49.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 49.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 49.5
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 0
+            },
+            {
+              "reps": 7,
+              "weightKg": 0
+            },
+            {
+              "reps": 7,
+              "weightKg": 0
+            },
+            {
+              "reps": 6,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 14
+            },
+            {
+              "reps": 12,
+              "weightKg": 14
+            },
+            {
+              "reps": 8,
+              "weightKg": 14
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 13,
+              "weightKg": 18.5
+            },
+            {
+              "reps": 15,
+              "weightKg": 18.5
+            },
+            {
+              "reps": 12,
+              "weightKg": 18.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-06-10T19:23:00.000Z"
+    },
+    {
+      "id": "ce876b09-5f41-4bd4-8f03-83cd315c94f1",
+      "date": "2026-06-12",
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 72.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 72.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 72.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 72.5
+            }
+          ]
+        },
+        {
+          "name": "Prensa de piernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 124.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 124.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 124.5
+            }
+          ]
+        },
+        {
+          "name": "Zancadas",
+          "sets": [
+            {
+              "reps": 12,
+              "weightKg": 17
+            },
+            {
+              "reps": 11,
+              "weightKg": 17
+            },
+            {
+              "reps": 10,
+              "weightKg": 17
+            }
+          ]
+        },
+        {
+          "name": "Hip thrust",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 54
+            },
+            {
+              "reps": 9,
+              "weightKg": 54
+            },
+            {
+              "reps": 8,
+              "weightKg": 54
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-06-12T19:10:00.000Z"
+    },
+    {
+      "id": "171f1d7f-185a-4d29-82b3-ea7f9172d210",
+      "date": "2026-06-15",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 58.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 58.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 58.5
+            },
+            {
+              "reps": 4,
+              "weightKg": 58.5
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 37
+            },
+            {
+              "reps": 6,
+              "weightKg": 37
+            },
+            {
+              "reps": 6,
+              "weightKg": 37
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 22.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 22.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 22.5
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 18.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 18.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 18.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-06-15T19:51:00.000Z"
+    },
+    {
+      "id": "ae769f6e-aa3c-4c51-9a7f-562b7404bdfe",
+      "date": "2026-06-17",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 89.5
+            },
+            {
+              "reps": 4,
+              "weightKg": 89.5
+            },
+            {
+              "reps": 4,
+              "weightKg": 89.5
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 51.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 51.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 51.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 51.5
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 0
+            },
+            {
+              "reps": 8,
+              "weightKg": 0
+            },
+            {
+              "reps": 8,
+              "weightKg": 0
+            },
+            {
+              "reps": 7,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 12,
+              "weightKg": 14
+            },
+            {
+              "reps": 12,
+              "weightKg": 14
+            },
+            {
+              "reps": 7,
+              "weightKg": 14
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 15,
+              "weightKg": 17
+            },
+            {
+              "reps": 13,
+              "weightKg": 17
+            },
+            {
+              "reps": 13,
+              "weightKg": 17
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-06-17T19:26:00.000Z"
+    },
+    {
+      "id": "9e845987-6622-44df-896e-1f7345c0ee00",
+      "date": "2026-06-19",
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 76.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 76.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 76.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 76.5
+            }
+          ]
+        },
+        {
+          "name": "Prensa de piernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 126.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 126.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 126.5
+            }
+          ]
+        },
+        {
+          "name": "Zancadas",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 16.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 16.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 16.5
+            }
+          ]
+        },
+        {
+          "name": "Hip thrust",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 54.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 54.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 54.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-06-19T19:27:00.000Z"
+    },
+    {
+      "id": "47b2be77-d510-44b6-8b26-e15e0b29f5a8",
+      "date": "2026-06-29",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 58.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 58.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 58.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 58.5
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 37
+            },
+            {
+              "reps": 8,
+              "weightKg": 37
+            },
+            {
+              "reps": 6,
+              "weightKg": 37
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 22.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 22.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 22.5
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 12,
+              "weightKg": 19
+            },
+            {
+              "reps": 12,
+              "weightKg": 19
+            },
+            {
+              "reps": 11,
+              "weightKg": 19
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-06-29T19:42:00.000Z"
+    },
+    {
+      "id": "0b16f994-4f14-4096-a522-1782cc40401f",
+      "date": "2026-07-01",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 92
+            },
+            {
+              "reps": 5,
+              "weightKg": 92
+            },
+            {
+              "reps": 5,
+              "weightKg": 92
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 51
+            },
+            {
+              "reps": 6,
+              "weightKg": 51
+            },
+            {
+              "reps": 7,
+              "weightKg": 51
+            },
+            {
+              "reps": 6,
+              "weightKg": 51
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 0
+            },
+            {
+              "reps": 8,
+              "weightKg": 0
+            },
+            {
+              "reps": 8,
+              "weightKg": 0
+            },
+            {
+              "reps": 7,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 13.5
+            },
+            {
+              "reps": 12,
+              "weightKg": 13.5
+            },
+            {
+              "reps": 11,
+              "weightKg": 13.5
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 13,
+              "weightKg": 18.5
+            },
+            {
+              "reps": 12,
+              "weightKg": 18.5
+            },
+            {
+              "reps": 13,
+              "weightKg": 18.5
+            }
+          ]
+        }
+      ],
+      "notes": "Sesión rápida, poco tiempo.",
+      "createdAt": "2026-07-01T19:20:00.000Z"
+    },
+    {
+      "id": "1fb96268-ebb5-423e-b16d-0c0d1a7d4e0c",
+      "date": "2026-07-03",
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 75.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 75.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 75.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 75.5
+            }
+          ]
+        },
+        {
+          "name": "Prensa de piernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 129.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 129.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 129.5
+            }
+          ]
+        },
+        {
+          "name": "Zancadas",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 18.5
+            },
+            {
+              "reps": 11,
+              "weightKg": 18.5
+            },
+            {
+              "reps": 11,
+              "weightKg": 18.5
+            }
+          ]
+        },
+        {
+          "name": "Hip thrust",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 57.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 57.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 57.5
+            }
+          ]
+        }
+      ],
+      "notes": "Buena energía hoy.",
+      "createdAt": "2026-07-03T19:36:00.000Z"
+    },
+    {
+      "id": "97054b39-1ecc-48e7-8e81-c7c48659a9c4",
+      "date": "2026-07-06",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 61.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 61.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 61.5
+            },
+            {
+              "reps": 4,
+              "weightKg": 61.5
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 39
+            },
+            {
+              "reps": 7,
+              "weightKg": 39
+            },
+            {
+              "reps": 7,
+              "weightKg": 39
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 25
+            },
+            {
+              "reps": 10,
+              "weightKg": 25
+            },
+            {
+              "reps": 7,
+              "weightKg": 25
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 18.5
+            },
+            {
+              "reps": 11,
+              "weightKg": 18.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 18.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-07-06T19:55:00.000Z"
+    },
+    {
+      "id": "bee8e9ec-783f-4a72-b44b-da9b4801efc3",
+      "date": "2026-07-08",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 94.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 94.5
+            },
+            {
+              "reps": 4,
+              "weightKg": 94.5
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 53.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 53.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 53.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 53.5
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 0
+            },
+            {
+              "reps": 8,
+              "weightKg": 0
+            },
+            {
+              "reps": 8,
+              "weightKg": 0
+            },
+            {
+              "reps": 7,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 13.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 13.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 13.5
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 14,
+              "weightKg": 17
+            },
+            {
+              "reps": 12,
+              "weightKg": 17
+            },
+            {
+              "reps": 13,
+              "weightKg": 17
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-07-08T19:27:00.000Z"
+    },
+    {
+      "id": "f04b931a-96be-4fb8-a97f-bdad5d4f12af",
+      "date": "2026-07-10",
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 80.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 80.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 80.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 80.5
+            }
+          ]
+        },
+        {
+          "name": "Prensa de piernas",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 132.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 132.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 132.5
+            }
+          ]
+        },
+        {
+          "name": "Zancadas",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 18
+            },
+            {
+              "reps": 11,
+              "weightKg": 18
+            },
+            {
+              "reps": 10,
+              "weightKg": 18
+            }
+          ]
+        },
+        {
+          "name": "Hip thrust",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 60
+            },
+            {
+              "reps": 9,
+              "weightKg": 60
+            },
+            {
+              "reps": 7,
+              "weightKg": 60
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-07-10T19:52:00.000Z"
+    },
+    {
+      "id": "a8b7fb6e-876d-4cc1-9cf8-f45ca9e80da5",
+      "date": "2026-07-13",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 63
+            },
+            {
+              "reps": 6,
+              "weightKg": 63
+            },
+            {
+              "reps": 5,
+              "weightKg": 63
+            },
+            {
+              "reps": 6,
+              "weightKg": 63
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 37.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 37.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 37.5
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 23.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 23.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 23.5
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 19
+            },
+            {
+              "reps": 12,
+              "weightKg": 19
+            },
+            {
+              "reps": 11,
+              "weightKg": 19
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-07-13T19:49:00.000Z"
+    },
+    {
+      "id": "522abe49-a05d-46c3-a667-43d3b36aae34",
+      "date": "2026-07-15",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 100.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 100.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 100.5
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 55
+            },
+            {
+              "reps": 8,
+              "weightKg": 55
+            },
+            {
+              "reps": 6,
+              "weightKg": 55
+            },
+            {
+              "reps": 7,
+              "weightKg": 55
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 0
+            },
+            {
+              "reps": 9,
+              "weightKg": 0
+            },
+            {
+              "reps": 9,
+              "weightKg": 0
+            },
+            {
+              "reps": 8,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 16
+            },
+            {
+              "reps": 9,
+              "weightKg": 16
+            },
+            {
+              "reps": 7,
+              "weightKg": 16
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 13,
+              "weightKg": 20
+            },
+            {
+              "reps": 14,
+              "weightKg": 20
+            },
+            {
+              "reps": 14,
+              "weightKg": 20
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-07-15T19:22:00.000Z"
+    },
+    {
+      "id": "bd2f5ae6-a08c-4450-aa99-a64d2403e68d",
+      "date": "2026-07-17",
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 81
+            },
+            {
+              "reps": 6,
+              "weightKg": 81
+            },
+            {
+              "reps": 5,
+              "weightKg": 81
+            },
+            {
+              "reps": 7,
+              "weightKg": 81
+            }
+          ]
+        },
+        {
+          "name": "Prensa de piernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 133.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 133.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 133.5
+            }
+          ]
+        },
+        {
+          "name": "Zancadas",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 18
+            },
+            {
+              "reps": 10,
+              "weightKg": 18
+            },
+            {
+              "reps": 9,
+              "weightKg": 18
+            }
+          ]
+        },
+        {
+          "name": "Hip thrust",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 65.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 65.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 65.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-07-17T19:10:00.000Z"
+    },
+    {
+      "id": "9e93144d-5bbb-4a61-a5ea-af6310d431e5",
+      "date": "2026-07-20",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 64
+            },
+            {
+              "reps": 6,
+              "weightKg": 64
+            },
+            {
+              "reps": 6,
+              "weightKg": 64
+            },
+            {
+              "reps": 6,
+              "weightKg": 64
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 39
+            },
+            {
+              "reps": 7,
+              "weightKg": 39
+            },
+            {
+              "reps": 6,
+              "weightKg": 39
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 24
+            },
+            {
+              "reps": 8,
+              "weightKg": 24
+            },
+            {
+              "reps": 9,
+              "weightKg": 24
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 18
+            },
+            {
+              "reps": 12,
+              "weightKg": 18
+            },
+            {
+              "reps": 10,
+              "weightKg": 18
+            }
+          ]
+        }
+      ],
+      "notes": "Costó un poco, poco sueño.",
+      "createdAt": "2026-07-20T19:04:00.000Z"
+    },
+    {
+      "id": "3c02293b-846c-48e8-97ce-67813b729e4c",
+      "date": "2026-07-22",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 99.5
+            },
+            {
+              "reps": 4,
+              "weightKg": 99.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 99.5
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 56.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 56.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 56.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 56.5
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 0
+            },
+            {
+              "reps": 9,
+              "weightKg": 0
+            },
+            {
+              "reps": 9,
+              "weightKg": 0
+            },
+            {
+              "reps": 8,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 12,
+              "weightKg": 16
+            },
+            {
+              "reps": 10,
+              "weightKg": 16
+            },
+            {
+              "reps": 10,
+              "weightKg": 16
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 14,
+              "weightKg": 20.5
+            },
+            {
+              "reps": 15,
+              "weightKg": 20.5
+            },
+            {
+              "reps": 12,
+              "weightKg": 20.5
+            }
+          ]
+        }
+      ],
+      "notes": "Buena energía hoy.",
+      "createdAt": "2026-07-22T19:30:00.000Z"
+    },
+    {
+      "id": "bb6a0c3d-8153-4139-9fb4-f016b5d3f777",
+      "date": "2026-07-24",
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 85.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 85.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 85.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 85.5
+            }
+          ]
+        },
+        {
+          "name": "Prensa de piernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 139
+            },
+            {
+              "reps": 10,
+              "weightKg": 139
+            },
+            {
+              "reps": 9,
+              "weightKg": 139
+            }
+          ]
+        },
+        {
+          "name": "Zancadas",
+          "sets": [
+            {
+              "reps": 12,
+              "weightKg": 20
+            },
+            {
+              "reps": 12,
+              "weightKg": 20
+            },
+            {
+              "reps": 11,
+              "weightKg": 20
+            }
+          ]
+        },
+        {
+          "name": "Hip thrust",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 67.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 67.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 67.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-07-24T19:02:00.000Z"
+    },
+    {
+      "id": "1bf899a6-f62c-4ede-a3c6-a3e9201ee752",
+      "date": "2026-07-27",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 65
+            },
+            {
+              "reps": 5,
+              "weightKg": 65
+            },
+            {
+              "reps": 6,
+              "weightKg": 65
+            },
+            {
+              "reps": 7,
+              "weightKg": 65
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 43
+            },
+            {
+              "reps": 6,
+              "weightKg": 43
+            },
+            {
+              "reps": 7,
+              "weightKg": 43
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 26
+            },
+            {
+              "reps": 9,
+              "weightKg": 26
+            },
+            {
+              "reps": 7,
+              "weightKg": 26
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 12,
+              "weightKg": 20
+            },
+            {
+              "reps": 11,
+              "weightKg": 20
+            },
+            {
+              "reps": 11,
+              "weightKg": 20
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-07-27T19:41:00.000Z"
+    },
+    {
+      "id": "d8b73668-d79d-4819-b124-3d17ff420f88",
+      "date": "2026-07-29",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 4,
+              "weightKg": 102.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 102.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 102.5
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 57.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 57.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 57.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 57.5
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 0
+            },
+            {
+              "reps": 9,
+              "weightKg": 0
+            },
+            {
+              "reps": 9,
+              "weightKg": 0
+            },
+            {
+              "reps": 8,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 15.5
+            },
+            {
+              "reps": 11,
+              "weightKg": 15.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 15.5
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 12,
+              "weightKg": 19
+            },
+            {
+              "reps": 12,
+              "weightKg": 19
+            },
+            {
+              "reps": 12,
+              "weightKg": 19
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-07-29T19:56:00.000Z"
+    },
+    {
+      "id": "c02f00f9-96ba-4ace-a474-2dbc2657972f",
+      "date": "2026-07-31",
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 83
+            },
+            {
+              "reps": 7,
+              "weightKg": 83
+            },
+            {
+              "reps": 6,
+              "weightKg": 83
+            },
+            {
+              "reps": 5,
+              "weightKg": 83
+            }
+          ]
+        },
+        {
+          "name": "Prensa de piernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 146
+            },
+            {
+              "reps": 8,
+              "weightKg": 146
+            },
+            {
+              "reps": 9,
+              "weightKg": 146
+            }
+          ]
+        },
+        {
+          "name": "Zancadas",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 19.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 19.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 19.5
+            }
+          ]
+        },
+        {
+          "name": "Hip thrust",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 68.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 68.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 68.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-07-31T19:28:00.000Z"
+    },
+    {
+      "id": "37421344-9cdd-44f4-8828-0af50f276c1e",
+      "date": "2026-08-03",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 65.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 65.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 65.5
+            },
+            {
+              "reps": 4,
+              "weightKg": 65.5
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 41.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 41.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 41.5
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 27
+            },
+            {
+              "reps": 9,
+              "weightKg": 27
+            },
+            {
+              "reps": 8,
+              "weightKg": 27
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 12,
+              "weightKg": 19.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 19.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 19.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-08-03T19:30:00.000Z"
+    },
+    {
+      "id": "1c107f31-dde1-4db6-aa58-3b8bd8264080",
+      "date": "2026-08-05",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 4,
+              "weightKg": 106
+            },
+            {
+              "reps": 5,
+              "weightKg": 106
+            },
+            {
+              "reps": 4,
+              "weightKg": 106
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 58.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 58.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 58.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 58.5
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 0
+            },
+            {
+              "reps": 9,
+              "weightKg": 0
+            },
+            {
+              "reps": 9,
+              "weightKg": 0
+            },
+            {
+              "reps": 8,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 16.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 16.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 16.5
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 13,
+              "weightKg": 19
+            },
+            {
+              "reps": 14,
+              "weightKg": 19
+            },
+            {
+              "reps": 12,
+              "weightKg": 19
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-08-05T19:24:00.000Z"
+    },
+    {
+      "id": "ccc25c55-496c-4792-8e99-242b0d1de516",
+      "date": "2026-08-07",
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 88.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 88.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 88.5
+            },
+            {
+              "reps": 6,
+              "weightKg": 88.5
+            }
+          ]
+        },
+        {
+          "name": "Prensa de piernas",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 149.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 149.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 149.5
+            }
+          ]
+        },
+        {
+          "name": "Zancadas",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 20.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 20.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 20.5
+            }
+          ]
+        },
+        {
+          "name": "Hip thrust",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 72.5
+            },
+            {
+              "reps": 8,
+              "weightKg": 72.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 72.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-08-07T19:36:00.000Z"
+    },
+    {
+      "id": "14e99c82-ce8c-4bb3-bdfe-35203653ba9b",
+      "date": "2026-08-10",
+      "exercises": [
+        {
+          "name": "Press de banca",
+          "sets": [
+            {
+              "reps": 7,
+              "weightKg": 70.5
+            },
+            {
+              "reps": 5,
+              "weightKg": 70.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 70.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 70.5
+            }
+          ]
+        },
+        {
+          "name": "Press militar",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 42
+            },
+            {
+              "reps": 5,
+              "weightKg": 42
+            },
+            {
+              "reps": 5,
+              "weightKg": 42
+            }
+          ]
+        },
+        {
+          "name": "Press inclinado con mancuernas",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 26
+            },
+            {
+              "reps": 10,
+              "weightKg": 26
+            },
+            {
+              "reps": 8,
+              "weightKg": 26
+            }
+          ]
+        },
+        {
+          "name": "Extensión de tríceps",
+          "sets": [
+            {
+              "reps": 12,
+              "weightKg": 19.5
+            },
+            {
+              "reps": 11,
+              "weightKg": 19.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 19.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-08-10T19:28:00.000Z"
+    },
+    {
+      "id": "89d79aab-1dfe-4367-95bb-800f6a1d5f64",
+      "date": "2026-08-12",
+      "exercises": [
+        {
+          "name": "Peso muerto",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 112
+            },
+            {
+              "reps": 5,
+              "weightKg": 112
+            },
+            {
+              "reps": 4,
+              "weightKg": 112
+            }
+          ]
+        },
+        {
+          "name": "Remo con barra",
+          "sets": [
+            {
+              "reps": 6,
+              "weightKg": 59
+            },
+            {
+              "reps": 6,
+              "weightKg": 59
+            },
+            {
+              "reps": 8,
+              "weightKg": 59
+            },
+            {
+              "reps": 5,
+              "weightKg": 59
+            }
+          ]
+        },
+        {
+          "name": "Dominadas",
+          "sets": [
+            {
+              "reps": 10,
+              "weightKg": 0
+            },
+            {
+              "reps": 10,
+              "weightKg": 0
+            },
+            {
+              "reps": 10,
+              "weightKg": 0
+            },
+            {
+              "reps": 9,
+              "weightKg": 0
+            }
+          ]
+        },
+        {
+          "name": "Curl de bíceps",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 15.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 15.5
+            },
+            {
+              "reps": 9,
+              "weightKg": 15.5
+            }
+          ]
+        },
+        {
+          "name": "Face pull",
+          "sets": [
+            {
+              "reps": 12,
+              "weightKg": 20.5
+            },
+            {
+              "reps": 14,
+              "weightKg": 20.5
+            },
+            {
+              "reps": 14,
+              "weightKg": 20.5
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "createdAt": "2026-08-12T19:28:00.000Z"
+    },
+    {
+      "id": "cfe453c0-0c1c-4a3b-8904-2eeb82159f7c",
+      "date": "2026-08-14",
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "sets": [
+            {
+              "reps": 5,
+              "weightKg": 89
+            },
+            {
+              "reps": 5,
+              "weightKg": 89
+            },
+            {
+              "reps": 5,
+              "weightKg": 89
+            },
+            {
+              "reps": 4,
+              "weightKg": 89
+            }
+          ]
+        },
+        {
+          "name": "Prensa de piernas",
+          "sets": [
+            {
+              "reps": 9,
+              "weightKg": 147
+            },
+            {
+              "reps": 9,
+              "weightKg": 147
+            },
+            {
+              "reps": 8,
+              "weightKg": 147
+            }
+          ]
+        },
+        {
+          "name": "Zancadas",
+          "sets": [
+            {
+              "reps": 11,
+              "weightKg": 20
+            },
+            {
+              "reps": 12,
+              "weightKg": 20
+            },
+            {
+              "reps": 9,
+              "weightKg": 20
+            }
+          ]
+        },
+        {
+          "name": "Hip thrust",
+          "sets": [
+            {
+              "reps": 8,
+              "weightKg": 71.5
+            },
+            {
+              "reps": 10,
+              "weightKg": 71.5
+            },
+            {
+              "reps": 7,
+              "weightKg": 71.5
+            }
+          ]
+        }
+      ],
+      "notes": "Buena energía hoy.",
+      "createdAt": "2026-08-14T19:58:00.000Z"
+    }
+  ],
+  "bodyMetrics": [
+    {
+      "id": "99bf6ab0-fd56-4967-910e-f2f0eaeafdcd",
+      "date": "2026-04-13",
+      "weightKg": 78.7,
+      "bodyFatPct": 18.6,
+      "chestCm": 99.7,
+      "waistCm": 85.9,
+      "hipsCm": 98.7,
+      "armCm": 33.9,
+      "thighCm": 56.2,
+      "createdAt": "2026-04-13T08:31:00.000Z"
+    },
+    {
+      "id": "11b71757-cdef-4918-9fa8-b4033b37e710",
+      "date": "2026-04-20",
+      "weightKg": 79.1,
+      "bodyFatPct": 18.1,
+      "chestCm": 100.1,
+      "waistCm": 86,
+      "hipsCm": 98.7,
+      "armCm": 34.3,
+      "thighCm": 55.9,
+      "createdAt": "2026-04-20T08:42:00.000Z"
+    },
+    {
+      "id": "c8ba4223-76ac-4714-9a24-08c572e88a65",
+      "date": "2026-04-27",
+      "weightKg": 78.9,
+      "bodyFatPct": 18.1,
+      "chestCm": 100.1,
+      "waistCm": 85.8,
+      "hipsCm": 98.8,
+      "armCm": 34.3,
+      "thighCm": 56.4,
+      "createdAt": "2026-04-27T08:27:00.000Z"
+    },
+    {
+      "id": "58b8c0f7-10d0-45cc-9712-d9d243eece53",
+      "date": "2026-05-04",
+      "weightKg": 78.2,
+      "bodyFatPct": 17.8,
+      "chestCm": 100.7,
+      "waistCm": 85.2,
+      "hipsCm": 99,
+      "armCm": 34.3,
+      "thighCm": 56.3,
+      "createdAt": "2026-05-04T08:05:00.000Z"
+    },
+    {
+      "id": "2311c006-10fe-4ab7-be44-408335e80977",
+      "date": "2026-05-11",
+      "weightKg": 78.6,
+      "bodyFatPct": 17.6,
+      "chestCm": 100.8,
+      "waistCm": 85.5,
+      "hipsCm": 98.7,
+      "armCm": 34.4,
+      "thighCm": 56.1,
+      "createdAt": "2026-05-11T08:29:00.000Z"
+    },
+    {
+      "id": "bd98306e-b2d6-4119-a36b-7836ef789b15",
+      "date": "2026-05-18",
+      "weightKg": 78,
+      "bodyFatPct": 17.7,
+      "chestCm": 100.8,
+      "waistCm": 85.1,
+      "hipsCm": 98.4,
+      "armCm": 34.7,
+      "thighCm": 56.4,
+      "createdAt": "2026-05-18T08:44:00.000Z"
+    },
+    {
+      "id": "28839475-63da-4647-81fd-8aed025f6a47",
+      "date": "2026-05-25",
+      "weightKg": 78.4,
+      "bodyFatPct": 17.4,
+      "chestCm": 100.6,
+      "waistCm": 84.9,
+      "hipsCm": 98.5,
+      "armCm": 34.6,
+      "thighCm": 56.5,
+      "createdAt": "2026-05-25T08:45:00.000Z"
+    },
+    {
+      "id": "2e343d18-3e2b-4bfc-b5ce-104a1430019a",
+      "date": "2026-06-01",
+      "weightKg": 78.1,
+      "bodyFatPct": 17,
+      "chestCm": 101.1,
+      "waistCm": 84.9,
+      "hipsCm": 98.3,
+      "armCm": 34.7,
+      "thighCm": 56.8,
+      "createdAt": "2026-06-01T08:28:00.000Z"
+    },
+    {
+      "id": "3731ad36-38c2-4d27-b119-7b88665984f7",
+      "date": "2026-06-08",
+      "weightKg": 78,
+      "bodyFatPct": 16.9,
+      "chestCm": 101.4,
+      "waistCm": 84.7,
+      "hipsCm": 98.3,
+      "armCm": 34.8,
+      "thighCm": 56.6,
+      "createdAt": "2026-06-08T08:39:00.000Z"
+    },
+    {
+      "id": "138db19c-aee5-4874-a017-5fce123ddea3",
+      "date": "2026-06-15",
+      "weightKg": 78,
+      "bodyFatPct": 16.9,
+      "chestCm": 101.1,
+      "waistCm": 84.3,
+      "hipsCm": 98.3,
+      "armCm": 35,
+      "thighCm": 57,
+      "createdAt": "2026-06-15T08:24:00.000Z"
+    },
+    {
+      "id": "a17e3511-00bf-40ad-9f09-a5e0b0dbdaa1",
+      "date": "2026-06-22",
+      "weightKg": 77.7,
+      "bodyFatPct": 16.6,
+      "chestCm": 101.5,
+      "waistCm": 83.9,
+      "hipsCm": 97.9,
+      "armCm": 35.1,
+      "thighCm": 56.8,
+      "createdAt": "2026-06-22T08:07:00.000Z"
+    },
+    {
+      "id": "734d8c5a-ce34-4026-81c3-02f065cd536b",
+      "date": "2026-06-29",
+      "weightKg": 77.4,
+      "bodyFatPct": 16.7,
+      "chestCm": 101.4,
+      "waistCm": 83.5,
+      "hipsCm": 98.3,
+      "armCm": 35.3,
+      "thighCm": 57.2,
+      "createdAt": "2026-06-29T08:13:00.000Z"
+    },
+    {
+      "id": "3c0970fb-f11d-4299-b95d-e173fe6596ce",
+      "date": "2026-07-06",
+      "weightKg": 77.2,
+      "bodyFatPct": 16.6,
+      "chestCm": 101.9,
+      "waistCm": 83.4,
+      "hipsCm": 98,
+      "armCm": 35.4,
+      "thighCm": 56.9,
+      "createdAt": "2026-07-06T08:29:00.000Z"
+    },
+    {
+      "id": "3b4cb86d-eb41-4dcd-b2dc-fb13b8c105e2",
+      "date": "2026-07-13",
+      "weightKg": 77,
+      "bodyFatPct": 16,
+      "chestCm": 101.6,
+      "waistCm": 83.6,
+      "hipsCm": 98.1,
+      "armCm": 35.5,
+      "thighCm": 57.1,
+      "createdAt": "2026-07-13T08:15:00.000Z"
+    },
+    {
+      "id": "6c643d08-926b-4920-bc93-7468471f5cbd",
+      "date": "2026-07-20",
+      "weightKg": 77.2,
+      "bodyFatPct": 16,
+      "chestCm": 101.8,
+      "waistCm": 83.3,
+      "hipsCm": 97.9,
+      "armCm": 35.4,
+      "thighCm": 57.4,
+      "createdAt": "2026-07-20T08:58:00.000Z"
+    },
+    {
+      "id": "1e4f5f81-e927-4be7-a4e4-76b70e43aa67",
+      "date": "2026-07-27",
+      "weightKg": 77,
+      "bodyFatPct": 15.7,
+      "chestCm": 102,
+      "waistCm": 83,
+      "hipsCm": 97.6,
+      "armCm": 35.7,
+      "thighCm": 57.1,
+      "createdAt": "2026-07-27T08:33:00.000Z"
+    },
+    {
+      "id": "f8b32c7f-acdc-4609-b03b-8c4d4fdab4fc",
+      "date": "2026-08-03",
+      "weightKg": 76.7,
+      "bodyFatPct": 15.5,
+      "chestCm": 102.3,
+      "waistCm": 82.9,
+      "hipsCm": 97.5,
+      "armCm": 35.6,
+      "thighCm": 57.2,
+      "createdAt": "2026-08-03T08:22:00.000Z"
+    },
+    {
+      "id": "b41d1153-7b4d-4bf8-bcab-c786082ad6ee",
+      "date": "2026-08-10",
+      "weightKg": 76.7,
+      "bodyFatPct": 15.6,
+      "chestCm": 102.6,
+      "waistCm": 82.6,
+      "hipsCm": 97.4,
+      "armCm": 35.6,
+      "thighCm": 57.4,
+      "createdAt": "2026-08-10T08:12:00.000Z"
+    }
+  ],
+  "cardioSessions": [
+    {
+      "id": "90964fc7-32b1-4626-9c7c-eb721218af9d",
+      "date": "2026-04-21",
+      "type": "Correr",
+      "durationMin": 28,
+      "distanceKm": 4.6,
+      "calories": 294,
+      "notes": "",
+      "createdAt": "2026-04-21T07:09:00.000Z"
+    },
+    {
+      "id": "651e312d-41de-44f0-9ca2-0ef4f1de3d95",
+      "date": "2026-04-30",
+      "type": "Bicicleta",
+      "durationMin": 42,
+      "distanceKm": 13.5,
+      "calories": 336,
+      "notes": "",
+      "createdAt": "2026-04-30T07:26:00.000Z"
+    },
+    {
+      "id": "38e7992b-1e12-4df7-8a59-a95345f5f1cf",
+      "date": "2026-05-05",
+      "type": "Correr",
+      "durationMin": 25,
+      "distanceKm": 4.4,
+      "calories": 263,
+      "notes": "",
+      "createdAt": "2026-05-05T07:13:00.000Z"
+    },
+    {
+      "id": "fcddef5d-5593-464d-967d-8368a2d2b098",
+      "date": "2026-05-07",
+      "type": "Bicicleta",
+      "durationMin": 37,
+      "distanceKm": 12.8,
+      "calories": 296,
+      "notes": "",
+      "createdAt": "2026-05-07T07:49:00.000Z"
+    },
+    {
+      "id": "cfbde998-8aeb-489a-bcda-6fcd64b526e4",
+      "date": "2026-05-12",
+      "type": "Correr",
+      "durationMin": 35,
+      "distanceKm": 4.6,
+      "calories": 368,
+      "notes": "",
+      "createdAt": "2026-05-12T07:26:00.000Z"
+    },
+    {
+      "id": "b4071ab7-645a-4d50-bc8b-ad60f9ef165c",
+      "date": "2026-05-14",
+      "type": "Bicicleta",
+      "durationMin": 32,
+      "distanceKm": 16.3,
+      "calories": 256,
+      "notes": "",
+      "createdAt": "2026-05-14T07:14:00.000Z"
+    },
+    {
+      "id": "a858070d-3567-46f3-b06c-90338622c6e7",
+      "date": "2026-05-21",
+      "type": "Bicicleta",
+      "durationMin": 42,
+      "distanceKm": 14.8,
+      "calories": 336,
+      "notes": "",
+      "createdAt": "2026-05-21T07:40:00.000Z"
+    },
+    {
+      "id": "5577d413-60d3-46d4-8384-e2c8bf6c13bc",
+      "date": "2026-05-28",
+      "type": "Bicicleta",
+      "durationMin": 33,
+      "distanceKm": 10.9,
+      "calories": 264,
+      "notes": "",
+      "createdAt": "2026-05-28T07:59:00.000Z"
+    },
+    {
+      "id": "64f5e8e4-3114-456f-b4b0-9e520756cc35",
+      "date": "2026-06-02",
+      "type": "Correr",
+      "durationMin": 37,
+      "distanceKm": 5.3,
+      "calories": 389,
+      "notes": "",
+      "createdAt": "2026-06-02T07:18:00.000Z"
+    },
+    {
+      "id": "48753a5f-9f43-4f3a-97f2-6f804ae0395d",
+      "date": "2026-06-04",
+      "type": "Bicicleta",
+      "durationMin": 48,
+      "distanceKm": 17.7,
+      "calories": 384,
+      "notes": "",
+      "createdAt": "2026-06-04T07:00:00.000Z"
+    },
+    {
+      "id": "a8058c95-1f33-43f2-b40b-6b591feb6b03",
+      "date": "2026-06-09",
+      "type": "Correr",
+      "durationMin": 38,
+      "distanceKm": 5.5,
+      "calories": 399,
+      "notes": "",
+      "createdAt": "2026-06-09T07:20:00.000Z"
+    },
+    {
+      "id": "a2a49f71-0664-41dd-8441-ba12b0df5bbf",
+      "date": "2026-06-11",
+      "type": "Bicicleta",
+      "durationMin": 36,
+      "distanceKm": 19.4,
+      "calories": 288,
+      "notes": "",
+      "createdAt": "2026-06-11T07:37:00.000Z"
+    },
+    {
+      "id": "0812917a-e2f1-4784-a070-e34406b5f36c",
+      "date": "2026-06-16",
+      "type": "Correr",
+      "durationMin": 27,
+      "distanceKm": 6.2,
+      "calories": 284,
+      "notes": "",
+      "createdAt": "2026-06-16T07:34:00.000Z"
+    },
+    {
+      "id": "c5025de7-4891-4b4f-925d-bcfdbadcf6a9",
+      "date": "2026-06-18",
+      "type": "Bicicleta",
+      "durationMin": 37,
+      "distanceKm": 13.4,
+      "calories": 296,
+      "notes": "",
+      "createdAt": "2026-06-18T07:38:00.000Z"
+    },
+    {
+      "id": "d2229825-5624-429c-852b-005349f6bc45",
+      "date": "2026-06-23",
+      "type": "Correr",
+      "durationMin": 25,
+      "distanceKm": 5.7,
+      "calories": 263,
+      "notes": "",
+      "createdAt": "2026-06-23T07:34:00.000Z"
+    },
+    {
+      "id": "9b2e895b-da2d-419f-b9e0-54544e193ae1",
+      "date": "2026-06-25",
+      "type": "Bicicleta",
+      "durationMin": 48,
+      "distanceKm": 11.9,
+      "calories": 384,
+      "notes": "",
+      "createdAt": "2026-06-25T07:50:00.000Z"
+    },
+    {
+      "id": "26a47542-8d06-42c8-873b-dc12e3b2c06f",
+      "date": "2026-06-30",
+      "type": "Correr",
+      "durationMin": 24,
+      "distanceKm": 6.3,
+      "calories": 252,
+      "notes": "",
+      "createdAt": "2026-06-30T07:40:00.000Z"
+    },
+    {
+      "id": "d816cf44-88f1-49af-b4ac-5681bafe54f6",
+      "date": "2026-07-02",
+      "type": "Bicicleta",
+      "durationMin": 49,
+      "distanceKm": 17.7,
+      "calories": 392,
+      "notes": "",
+      "createdAt": "2026-07-02T07:08:00.000Z"
+    },
+    {
+      "id": "4b0e3aa2-a2c0-4040-896f-710a8195d684",
+      "date": "2026-07-07",
+      "type": "Correr",
+      "durationMin": 30,
+      "distanceKm": 5.6,
+      "calories": 315,
+      "notes": "",
+      "createdAt": "2026-07-07T07:21:00.000Z"
+    },
+    {
+      "id": "1a0b18c0-19af-44cc-80ab-294a46961d79",
+      "date": "2026-07-09",
+      "type": "Bicicleta",
+      "durationMin": 43,
+      "distanceKm": 15.9,
+      "calories": 344,
+      "notes": "",
+      "createdAt": "2026-07-09T07:18:00.000Z"
+    },
+    {
+      "id": "57bf5370-1cec-413f-a9e2-2600f63ab1a7",
+      "date": "2026-07-14",
+      "type": "Correr",
+      "durationMin": 34,
+      "distanceKm": 4.1,
+      "calories": 357,
+      "notes": "",
+      "createdAt": "2026-07-14T07:53:00.000Z"
+    },
+    {
+      "id": "4b46ff32-a034-41d5-947f-5fcc6de8396e",
+      "date": "2026-07-16",
+      "type": "Bicicleta",
+      "durationMin": 31,
+      "distanceKm": 12.9,
+      "calories": 248,
+      "notes": "",
+      "createdAt": "2026-07-16T07:57:00.000Z"
+    },
+    {
+      "id": "895ac266-74b7-499c-95bd-839f41ad4ded",
+      "date": "2026-07-21",
+      "type": "Correr",
+      "durationMin": 24,
+      "distanceKm": 5.9,
+      "calories": 252,
+      "notes": "",
+      "createdAt": "2026-07-21T07:47:00.000Z"
+    },
+    {
+      "id": "6ba2a27c-0765-4557-b406-c32b181b173a",
+      "date": "2026-07-23",
+      "type": "Bicicleta",
+      "durationMin": 36,
+      "distanceKm": 19.7,
+      "calories": 288,
+      "notes": "",
+      "createdAt": "2026-07-23T07:58:00.000Z"
+    },
+    {
+      "id": "eb22967a-58d7-4c0c-a0f1-fffa17fdab2d",
+      "date": "2026-07-28",
+      "type": "Correr",
+      "durationMin": 29,
+      "distanceKm": 6.2,
+      "calories": 305,
+      "notes": "",
+      "createdAt": "2026-07-28T07:56:00.000Z"
+    },
+    {
+      "id": "986cbbf1-d221-4598-bf3d-2d1e2ea96d02",
+      "date": "2026-07-30",
+      "type": "Bicicleta",
+      "durationMin": 38,
+      "distanceKm": 15,
+      "calories": 304,
+      "notes": "",
+      "createdAt": "2026-07-30T07:19:00.000Z"
+    },
+    {
+      "id": "9d5a026a-a9ea-4c3f-8da6-6269acaa24bf",
+      "date": "2026-08-04",
+      "type": "Correr",
+      "durationMin": 31,
+      "distanceKm": 3.6,
+      "calories": 326,
+      "notes": "",
+      "createdAt": "2026-08-04T07:29:00.000Z"
+    },
+    {
+      "id": "08e5f20a-f85e-4447-9368-ce2209e5ccf3",
+      "date": "2026-08-06",
+      "type": "Bicicleta",
+      "durationMin": 45,
+      "distanceKm": 15.7,
+      "calories": 360,
+      "notes": "",
+      "createdAt": "2026-08-06T07:29:00.000Z"
+    },
+    {
+      "id": "a93b9dc1-8790-45d1-ac4c-85589a8154ca",
+      "date": "2026-08-11",
+      "type": "Correr",
+      "durationMin": 36,
+      "distanceKm": 5,
+      "calories": 378,
+      "notes": "",
+      "createdAt": "2026-08-11T07:36:00.000Z"
+    },
+    {
+      "id": "fa221b29-c1f8-4639-9a79-bfe1485f552c",
+      "date": "2026-08-13",
+      "type": "Bicicleta",
+      "durationMin": 38,
+      "distanceKm": 10.9,
+      "calories": 304,
+      "notes": "",
+      "createdAt": "2026-08-13T07:59:00.000Z"
+    }
+  ],
+  "visits": [
+    {
+      "id": "2f2aca26-ce6f-40d9-97af-0c51562b4922",
+      "date": "2026-04-18",
+      "notes": "",
+      "createdAt": "2026-04-18T10:49:00.000Z"
+    },
+    {
+      "id": "bdc66d4e-d765-4681-94d1-72a1cfaa7bf7",
+      "date": "2026-04-19",
+      "notes": "",
+      "createdAt": "2026-04-19T10:33:00.000Z"
+    },
+    {
+      "id": "db06830c-5242-4ba1-bf21-2ab280711a20",
+      "date": "2026-04-26",
+      "notes": "Movilidad y elongación",
+      "createdAt": "2026-04-26T10:36:00.000Z"
+    },
+    {
+      "id": "e4d9889f-cb5c-4323-b507-1d6f70d95e8e",
+      "date": "2026-05-02",
+      "notes": "Movilidad y elongación",
+      "createdAt": "2026-05-02T10:26:00.000Z"
+    },
+    {
+      "id": "dc4ad287-7883-46ef-8d61-9f9146d89337",
+      "date": "2026-05-10",
+      "notes": "",
+      "createdAt": "2026-05-10T10:40:00.000Z"
+    },
+    {
+      "id": "210ff1e0-56d0-4e49-a1a9-4d52faa20eb8",
+      "date": "2026-05-16",
+      "notes": "",
+      "createdAt": "2026-05-16T10:01:00.000Z"
+    },
+    {
+      "id": "685cb30a-1780-4040-aa7f-233362073f10",
+      "date": "2026-06-06",
+      "notes": "",
+      "createdAt": "2026-06-06T10:00:00.000Z"
+    },
+    {
+      "id": "9a459e51-efff-4d35-bd25-6a38699e3f44",
+      "date": "2026-06-07",
+      "notes": "",
+      "createdAt": "2026-06-07T10:03:00.000Z"
+    },
+    {
+      "id": "43a34086-bd86-4341-9dc1-080c1b948665",
+      "date": "2026-06-13",
+      "notes": "",
+      "createdAt": "2026-06-13T10:22:00.000Z"
+    },
+    {
+      "id": "df8bfe37-83f9-43ba-a5f0-e97652938659",
+      "date": "2026-06-14",
+      "notes": "Movilidad y elongación",
+      "createdAt": "2026-06-14T10:07:00.000Z"
+    },
+    {
+      "id": "56b07f7b-da0f-4730-9ccd-7b1291a24de6",
+      "date": "2026-06-20",
+      "notes": "",
+      "createdAt": "2026-06-20T10:43:00.000Z"
+    },
+    {
+      "id": "1154f9a1-733a-4e47-b7df-6e648ce9e314",
+      "date": "2026-07-25",
+      "notes": "Movilidad y elongación",
+      "createdAt": "2026-07-25T10:44:00.000Z"
+    },
+    {
+      "id": "52090274-d68c-4b63-8449-e4d308170aed",
+      "date": "2026-07-26",
+      "notes": "",
+      "createdAt": "2026-07-26T10:13:00.000Z"
+    },
+    {
+      "id": "aa32549e-d77f-42e1-83c9-6bd9e24b17b5",
+      "date": "2026-08-02",
+      "notes": "",
+      "createdAt": "2026-08-02T10:26:00.000Z"
+    },
+    {
+      "id": "3049cfc2-b661-4c2a-8ddd-20f5a12d189c",
+      "date": "2026-08-09",
+      "notes": "Movilidad y elongación",
+      "createdAt": "2026-08-09T10:59:00.000Z"
+    },
+    {
+      "id": "0dc6046c-d462-4035-9738-5c1b52b2aeee",
+      "date": "2026-08-15",
+      "notes": "",
+      "createdAt": "2026-08-15T10:27:00.000Z"
+    },
+    {
+      "id": "18d4cd10-c173-4f5a-a3ba-2fb252bce350",
+      "date": "2026-08-16",
+      "notes": "Movilidad y elongación",
+      "createdAt": "2026-08-16T10:06:00.000Z"
+    }
+  ]
 }

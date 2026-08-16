@@ -10,8 +10,11 @@ export function useCountUp(value: string, durationMs = 900) {
   const startedRef = useRef(false);
   const match = value.match(/^(-?\d+(?:\.\d+)?)(.*)$/);
   const target = match ? parseFloat(match[1]) : null;
+  // Preserva la cantidad de decimales del valor real (ej. "-0.5kg" o "76.7kg"):
+  // redondear siempre a entero acá perdía el signo y los decimales (Math.round(-0.5) = -0 -> "0").
+  const decimals = match && match[1].includes(".") ? match[1].split(".")[1].length : 0;
   const suffix = match ? match[2] : "";
-  const [display, setDisplay] = useState(target === null ? value : `0${suffix}`);
+  const [display, setDisplay] = useState(target === null ? value : `${(0).toFixed(decimals)}${suffix}`);
 
   useEffect(() => {
     if (target === null) {
@@ -39,7 +42,7 @@ export function useCountUp(value: string, durationMs = 900) {
         function tick(now: number) {
           const t = Math.min(1, (now - start) / durationMs);
           const eased = 1 - Math.pow(1 - t, 3);
-          const current = Math.round((target as number) * eased);
+          const current = ((target as number) * eased).toFixed(decimals);
           setDisplay(`${current}${suffix}`);
           if (t < 1) requestAnimationFrame(tick);
         }
@@ -50,7 +53,7 @@ export function useCountUp(value: string, durationMs = 900) {
     );
     observer.observe(el);
     return () => observer.disconnect();
-  }, [value, target, suffix, durationMs]);
+  }, [value, target, suffix, decimals, durationMs]);
 
   return { ref, display };
 }

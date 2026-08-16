@@ -1,4 +1,5 @@
 import { CARDIO_TYPES, type GymData } from "@/lib/gym";
+import { SectionHeading } from "@/app/_components/ui";
 import { CardioView } from "./view";
 
 export function CardioSection({ data }: { data: GymData }) {
@@ -6,8 +7,12 @@ export function CardioSection({ data }: { data: GymData }) {
 
   return (
     <div className="mx-auto max-w-4xl px-3 lg:px-4">
-      <h2 className="mb-1 text-xl font-bold text-foreground">Cardio</h2>
-      <p className="mb-4 text-sm text-(--ink-faint)">Distancia, tiempo y calorías de tus sesiones de cardio.</p>
+      <SectionHeading
+        eyebrow="Resistencia"
+        eyebrowColor="var(--accent-cardio)"
+        title="Cardio"
+        subtitle="Distancia, tiempo y calorías de tus sesiones de cardio."
+      />
       <CardioView sessions={sessions} cardioTypes={CARDIO_TYPES} />
     </div>
   );

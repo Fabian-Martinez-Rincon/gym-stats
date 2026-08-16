@@ -19,8 +19,27 @@
   --gold: #a8710a;
   --gold-bg: #fbf0da;
 
+  /* Acento por sección: cada área tiene su propia identidad de color (kicker,
+     íconos), mientras el azul de --brand queda reservado para la acción
+     principal (botones, charts) en toda la app. */
+  --accent-entrenamientos: hsl(16 78% 46%);
+  --accent-progreso: hsl(152 55% 32%);
+  --accent-cuerpo: hsl(268 52% 54%);
+  --accent-cardio: hsl(340 68% 48%);
+  --accent-asistencia: hsl(38 82% 38%);
+
+  /* Versiones "solid": no cambian con el tema (a diferencia de --accent-*, que
+     se aclaran en dark mode) — se usan como relleno del indicador de nav,
+     siempre lo bastante oscuras/saturadas para texto blanco encima. */
+  --accent-entrenamientos-solid: hsl(16 78% 46%);
+  --accent-progreso-solid: hsl(152 55% 32%);
+  --accent-cuerpo-solid: hsl(268 52% 54%);
+  --accent-cardio-solid: hsl(340 68% 48%);
+  --accent-asistencia-solid: hsl(38 82% 38%);
+
   --radius: 0.6rem;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 8px 24px -12px rgba(0, 0, 0, 0.16);
+  --font-display: "Space Grotesk", var(--font-body);
   --font-body: "Segoe UI", ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-mono: ui-monospace, "Cascadia Code", "SF Mono", Consolas, "Liberation Mono", monospace;
   color-scheme: light;
@@ -44,6 +63,11 @@
   --success-bg: #0f3324;
   --gold: #e8b84b;
   --gold-bg: #3a2d0f;
+  --accent-entrenamientos: hsl(18 88% 66%);
+  --accent-progreso: hsl(152 55% 60%);
+  --accent-cuerpo: hsl(268 80% 78%);
+  --accent-cardio: hsl(340 85% 72%);
+  --accent-asistencia: hsl(40 88% 62%);
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 28px -14px rgba(0, 0, 0, 0.6);
   color-scheme: dark;
 }
@@ -53,6 +77,17 @@
   --color-foreground: var(--ink);
   --font-sans: var(--font-body);
   --font-mono: var(--font-mono);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
 }
 
 * {

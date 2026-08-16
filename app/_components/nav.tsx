@@ -3,12 +3,12 @@
 import { useEffect, useRef, useState } from "react";
 
 export const NAV_LINKS = [
-  { id: "resumen", label: "Resumen" },
-  { id: "entrenamientos", label: "Entrenamientos" },
-  { id: "progreso", label: "Progreso" },
-  { id: "cuerpo", label: "Cuerpo" },
-  { id: "cardio", label: "Cardio" },
-  { id: "asistencia", label: "Asistencia" },
+  { id: "resumen", label: "Resumen", fill: "var(--brand)", ink: "var(--brand-foreground)" },
+  { id: "entrenamientos", label: "Entrenamientos", fill: "var(--accent-entrenamientos-solid)", ink: "#fff" },
+  { id: "progreso", label: "Progreso", fill: "var(--accent-progreso-solid)", ink: "#fff" },
+  { id: "cuerpo", label: "Cuerpo", fill: "var(--accent-cuerpo-solid)", ink: "#fff" },
+  { id: "cardio", label: "Cardio", fill: "var(--accent-cardio-solid)", ink: "#fff" },
+  { id: "asistencia", label: "Asistencia", fill: "var(--accent-asistencia-solid)", ink: "#fff" },
 ];
 
 export function Nav() {
@@ -44,15 +44,18 @@ export function Nav() {
     setIndicator({ left: el.offsetLeft, width: el.offsetWidth, ready: true });
   }, [active]);
 
+  const activeLink = NAV_LINKS.find((l) => l.id === active) ?? NAV_LINKS[0];
+
   return (
     <nav className="scroll-fade-x relative flex items-center gap-1 overflow-x-auto">
       <span
         aria-hidden
-        className="absolute inset-y-0 rounded-full bg-(--brand) transition-[transform,width] duration-300 ease-out"
+        className="absolute inset-y-0 rounded-full transition-[transform,width,background-color] duration-300 ease-out"
         style={{
           width: indicator.width,
           transform: `translateX(${indicator.left}px)`,
           opacity: indicator.ready ? 1 : 0,
+          backgroundColor: activeLink.fill,
         }}
       />
       {NAV_LINKS.map((link) => (
@@ -63,8 +66,9 @@ export function Nav() {
           }}
           href={`#${link.id}`}
           className={`relative z-10 shrink-0 rounded-full px-3 py-1.5 text-sm font-medium transition-colors ${
-            active === link.id ? "text-(--brand-foreground)" : "text-(--ink-dim) hover:text-foreground"
+            active === link.id ? "" : "text-(--ink-dim) hover:text-foreground"
           }`}
+          style={active === link.id ? { color: link.ink } : undefined}
         >
           {link.label}
         </a>

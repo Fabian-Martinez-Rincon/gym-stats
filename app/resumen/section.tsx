@@ -10,7 +10,7 @@ import {
   weightDelta,
   workoutVolume,
 } from "@/lib/stats";
-import { Card, EmptyState, LinkButton, StatTile } from "@/app/_components/ui";
+import { Card, EmptyState, LinkButton, SectionHeading, StatTile } from "@/app/_components/ui";
 import { DashboardCharts } from "@/app/_components/dashboard-charts";
 import { HeroLogDemo } from "./hero-log-demo";
 
@@ -51,8 +51,12 @@ export function ResumenSection({ data }: { data: GymData }) {
         <HeroLogDemo />
       </div>
 
-      <h2 className="mb-1 text-xl font-bold text-foreground">Resumen</h2>
-      <p className="mb-4 text-sm text-(--ink-faint)">Tu rendimiento en el gimnasio, de un vistazo.</p>
+      <SectionHeading
+        eyebrow="De un vistazo"
+        eyebrowColor="var(--brand)"
+        title="Resumen"
+        subtitle="Tu rendimiento en el gimnasio, de un vistazo."
+      />
 
       {!hasAnyData ? (
         <EmptyState>

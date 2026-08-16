@@ -1,5 +1,6 @@
 import { COMMON_EXERCISES, type GymData } from "@/lib/gym";
 import { getExerciseNames } from "@/lib/stats";
+import { SectionHeading } from "@/app/_components/ui";
 import { EntrenamientosView } from "./view";
 
 export function EntrenamientosSection({ data }: { data: GymData }) {
@@ -9,8 +10,12 @@ export function EntrenamientosSection({ data }: { data: GymData }) {
 
   return (
     <div className="mx-auto max-w-4xl px-3 lg:px-4">
-      <h2 className="mb-1 text-xl font-bold text-foreground">Entrenamientos</h2>
-      <p className="mb-4 text-sm text-(--ink-faint)">Registrá tus sesiones de fuerza: ejercicios, series, repeticiones y peso.</p>
+      <SectionHeading
+        eyebrow="Sesiones de fuerza"
+        eyebrowColor="var(--accent-entrenamientos)"
+        title="Entrenamientos"
+        subtitle="Registrá tus sesiones de fuerza: ejercicios, series, repeticiones y peso."
+      />
       <EntrenamientosView workouts={workouts} knownExercises={knownExercises} />
     </div>
   );

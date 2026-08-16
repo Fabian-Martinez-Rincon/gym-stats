@@ -4,7 +4,21 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import type { Workout } from "@/lib/gym";
 import { todayStr, workoutVolume } from "@/lib/stats";
-import { Button, Card, EmptyState, Field, inputClass } from "@/app/_components/ui";
+import { Button, Card, EmptyState, Field, IconCircle, inputClass } from "@/app/_components/ui";
+
+function DumbbellIcon() {
+  return (
+    <svg aria-hidden viewBox="0 0 24 24" fill="none" className="h-4.5 w-4.5">
+      <path
+        d="M2 10.5v3M5 8v8M8 12h8M16 8v8M22 10.5v3"
+        stroke="currentColor"
+        strokeWidth={1.75}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 interface DraftSet {
   reps: string;
@@ -27,6 +41,7 @@ export function EntrenamientosView({ workouts, knownExercises }: { workouts: Wor
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [deletingId, setDeletingId] = useState<string | null>(null);
+  const [visibleCount, setVisibleCount] = useState(8);
 
   function updateExercise(i: number, patch: Partial<DraftExercise>) {
     setExercises((prev) => prev.map((ex, idx) => (idx === i ? { ...ex, ...patch } : ex)));
@@ -185,37 +200,56 @@ export function EntrenamientosView({ workouts, knownExercises }: { workouts: Wor
         {workouts.length === 0 ? (
           <EmptyState>Todavía no cargaste ningún entrenamiento.</EmptyState>
         ) : (
-          <div className="flex flex-col gap-2">
-            {workouts.map((w) => (
-              <Card key={w.id}>
-                <div className="flex items-start justify-between gap-2">
-                  <div>
-                    <div className="text-sm font-semibold text-foreground">
-                      {new Date(`${w.date}T00:00:00`).toLocaleDateString("es-AR", { weekday: "long", day: "numeric", month: "long" })}
+          <>
+            <div className="flex flex-col gap-2">
+              {workouts.slice(0, visibleCount).map((w) => (
+                <Card key={w.id} interactive className="group">
+                  <div className="flex items-start gap-3">
+                    <IconCircle color="var(--accent-entrenamientos)">
+                      <DumbbellIcon />
+                    </IconCircle>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-start justify-between gap-2">
+                        <div>
+                          <div className="text-sm font-semibold text-foreground">
+                            {new Date(`${w.date}T00:00:00`).toLocaleDateString("es-AR", { weekday: "long", day: "numeric", month: "long" })}
+                          </div>
+                          <div className="text-xs text-(--ink-faint)">Volumen total: {workoutVolume(w).toLocaleString("es-AR")} kg</div>
+                        </div>
+                        <button
+                          type="button"
+                          disabled={deletingId === w.id}
+                          onClick={() => handleDelete(w.id)}
+                          className="shrink-0 rounded-md px-2 py-1 text-xs font-medium text-(--danger) opacity-100 transition-opacity hover:bg-(--danger-bg) disabled:opacity-50 sm:opacity-0 sm:group-hover:opacity-100 sm:group-focus-within:opacity-100"
+                        >
+                          Eliminar
+                        </button>
+                      </div>
+                      <ul className="mt-2 flex flex-col gap-1">
+                        {w.exercises.map((ex, i) => (
+                          <li key={i} className="text-sm text-(--ink-dim)">
+                            <span className="font-medium text-foreground">{ex.name}</span>{" "}
+                            {ex.sets.map((s, si) => (
+                              <span key={si} className="text-(--ink-faint)">
+                                {si > 0 && " · "}
+                                {s.reps}x{s.weightKg}kg
+                              </span>
+                            ))}
+                          </li>
+                        ))}
+                      </ul>
+                      {w.notes && <p className="mt-2 text-xs text-(--ink-faint) italic">{w.notes}</p>}
                     </div>
-                    <div className="text-xs text-(--ink-faint)">Volumen total: {workoutVolume(w).toLocaleString("es-AR")} kg</div>
                   </div>
-                  <Button variant="danger" disabled={deletingId === w.id} onClick={() => handleDelete(w.id)}>
-                    Eliminar
-                  </Button>
-                </div>
-                <ul className="mt-2 flex flex-col gap-1">
-                  {w.exercises.map((ex, i) => (
-                    <li key={i} className="text-sm text-(--ink-dim)">
-                      <span className="font-medium text-foreground">{ex.name}</span>{" "}
-                      {ex.sets.map((s, si) => (
-                        <span key={si} className="text-(--ink-faint)">
-                          {si > 0 && " · "}
-                          {s.reps}x{s.weightKg}kg
-                        </span>
-                      ))}
-                    </li>
-                  ))}
-                </ul>
-                {w.notes && <p className="mt-2 text-xs text-(--ink-faint) italic">{w.notes}</p>}
-              </Card>
-            ))}
-          </div>
+                </Card>
+              ))}
+            </div>
+            {visibleCount < workouts.length && (
+              <Button type="button" variant="secondary" onClick={() => setVisibleCount((n) => n + 8)} className="mt-3 w-full">
+                Mostrar {Math.min(8, workouts.length - visibleCount)} más ({workouts.length - visibleCount} restantes)
+              </Button>
+            )}
+          </>
         )}
       </div>
     </div>
